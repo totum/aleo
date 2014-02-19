@@ -1,4 +1,4 @@
-		<nav class="sub-nav  lc">
+		<nav class="nav-sidebar  sidebar  nav  lc">
 
 			<?php
 			// Store post ID in variable to access in aside
@@ -16,7 +16,7 @@
 
 			$wp_query = new WP_Query( $args );
 				if ( $wp_query->have_posts() ): ?>
-					<ul class="sub-nav-list">
+					<ul class="sidebar__list  grid--img  nav-list">
 					
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 						<?php
@@ -24,7 +24,7 @@
 						$aside_post_id = get_the_ID();
 						if ( $aside_post_id == $main_post_id ) : continue;						
 						else : ?>
-							<li class="sub-nav-entry">
+							<li class="img-grid__itm">
 								<?php
 								// Checks for post selected image. Inserts if true.
 								if( has_post_thumbnail() ) {
@@ -33,10 +33,10 @@
 									//$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-large', true );
 									//$thumb_large_url = $thumb_large['0'];
 								?>
-								<figure class="sub-nav-entry-figure image-container headline-img">
+								<figure class="sidebar__entry img-grid__container  img-text__container  img-container">
 									<a href="<?php the_permalink() ?>">
-										<img src="<?php echo $thumb_url; ?>" />
-										<h2 class="aside h-aside-element h-sub"><span class="aside-figure-title-bg"><?php the_title(); ?></span></h2>
+										<img class="img-grid__img  img-text__img  trans-opac-025" src="<?php echo $thumb_url; ?>" />
+										<h2 class="h3  img-text__title  img-text__title--img-grid trans-opac-025"><span class="img-text__bg"><?php the_title(); ?></span></h2>
 									</a>
 								</figure>
 								<?php } ?>

@@ -1,6 +1,6 @@
 <?php include (TEMPLATEPATH . '/partials/_header.php'); ?>
 		
-	<section class="main-wrap  lc">
+	<section class="wrap-main  lc">
 
 		<!-- Category name, h1 -->
 
@@ -11,7 +11,7 @@
 			?>
 			<!--<h1 class="category-title clear"><?php echo $cat_name; ?></h1>
 			-->
-		<article class="post-entry  lc">
+		<article class="content  content--left  product  lc">
 
 
 		<?php if (have_posts()) : ?>
@@ -24,10 +24,10 @@
 					$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-xlarge', true );
 					$thumb_large_url = $thumb_large['0'];
 					?>
-					<figure class="post-figure image-container headline-img">
-						<a href="<?php echo $thumb_large_url; ?>" rel="lightbox" class="lightbox">
-							<img src="<?php echo $thumb_url; ?>" rel="lightbox" />
-							<h1 class="post-title"><span class="post-title-bg img-title-bg"><?php the_title(); ?></span></h1>
+					<figure class="product__figure  img-text__container  img-container">
+						<a href="<?php echo $thumb_large_url; ?>">
+							<img src="<?php echo $thumb_url; ?>" />
+							<h1 class="h1  img-text__title  img-text__title--product"><span class="img-text__bg"><?php the_title(); ?></span></h1>
 						</a>
 					</figure>
 					<?php } ?>					

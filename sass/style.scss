@@ -47,9 +47,9 @@ Version: 0.1a
 
 @import "core/base";
 
-// ----- Content ----- //
+// ----- States ----- //
 
-@import "core/content";
+@import "core/states";
 
 // ----- Layout ----- //
 
@@ -61,16 +61,14 @@ Version: 0.1a
 
 @import "modules/button";
 
-@import "modules/carousel";
+@import "modules/content";
 
 @import "modules/grid";
 
-@import "modules/img-box";
-
-@import "modules/list";
+@import "modules/img-text";
 
 @import "modules/navigation";
 
 @import "modules/sidebar";
 
-@import "modules/temp";
+@import "modules/product";

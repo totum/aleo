@@ -1,0 +1,31 @@
+// -------------------------------------
+//   Img-text
+//	 For text with background resting ontop of img.
+// -------------------------------------
+
+.img-text__title--img-grid {
+	top: 5px;
+	right: 0;
+	opacity: 0;
+}
+
+.img-text__container {
+	position: relative;
+}
+
+.img-text__title {
+	position: absolute;
+
+}
+.img-text__title--product {
+	top: 200px;
+	left: 0;
+}
+
+
+
+.img-text__bg {
+	background-color: hsla(120, 10%, 0%, 0.5);
+	padding: 0.5em;
+	color: white;
+}
