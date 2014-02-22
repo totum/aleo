@@ -10,10 +10,10 @@
 </head>
 
 <body>
-	<header class="site-header  lc">
+	<header class="site-header  lc  clear">
 		<h1 class="site-logo"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></h1>
-		<h2 class="site-tagline  h2"><?php bloginfo('description'); ?></h2>
+		<h2 class="site-tagline  h4"><?php bloginfo('description'); ?></h2>
 	</header>
-	<nav class="nav-main  nav  lc">
+	<nav class="nav-main  nav  lc  clear">
 		<?php wp_nav_menu( array( 'container' => false ) ); ?>
 	</nav>

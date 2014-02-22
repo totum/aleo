@@ -1,25 +1,30 @@
 // Base-level layout (margin, padding, sizing).
 
-.site-logo,
-.site-tagline,
+body {
+	@include container($susy);
+}
+
+.site-header,
 .menu,
 .wrap-main {
-	margin: 0 auto;
-	width: 980px;
+	//margin: 0 auto;
+	//@include layout(8);
+	@include span(isolate 8 at 3 of 12);
+	//@include container(8 of 10);
+	//background-color: yellow;
 }
 
 .nav-main {
 	background-color: black;
-	
+	@include span(12 of 12);
 }
 
-
-
 .site-logo {
-	font-weight: normal;
+	
 	font-size: 400%;
 	line-height: 1em;
-	margin-top: 0.4em;
+	padding-top: 0.2em;
+	margin: 0;
 	a {
 		color: black;
 		text-decoration: none;
@@ -27,16 +32,26 @@
 
 }
 
+.site-tagline {
+	font-weight: normal;
+	margin: 0;
+}
+
 
 .content--left {
-	float: left;
-	width: 610px;
+	//float: left;
+	@include span(isolate 5 of 8);
+	//width: $test-wh;
 	overflow: hidden;
+	background-color: red;
 }
 
 .sidebar {
-	margin-left:680px;
-	width: 300px;
+	//margin-left:680px;
+	@include span(last 3 of 8 fluid);
+	//@include span-columns(3 omega);
+	//width: 300px;
 	padding-top: 3em;
 	overflow: hidden;
+	background-color: green;
 }

@@ -1,4 +1,7 @@
-.sidebar__entry:hover > .img-text__title,
-.sidebar__entry:hover > .img-text__img {
+.sidebar__entry:hover .img-text__title,
+.sidebar__entry:hover .img-text__img {
 	opacity: 1;
 }
+
+// set sidebar as container! for grid inside.
+// maybe define in grid...

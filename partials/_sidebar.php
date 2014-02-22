@@ -36,7 +36,7 @@
 								<figure class="sidebar__entry img-grid__container  img-text__container  img-container">
 									<a href="<?php the_permalink() ?>">
 										<img class="img-grid__img  img-text__img  trans-opac-025" src="<?php echo $thumb_url; ?>" />
-										<h2 class="h3  img-text__title  img-text__title--img-grid trans-opac-025"><span class="img-text__bg"><?php the_title(); ?></span></h2>
+										<h2 class="h5  img-text__title  img-text__title--img-grid trans-opac-025"><span class="img-text__bg"><?php the_title(); ?></span></h2>
 									</a>
 								</figure>
 								<?php } ?>

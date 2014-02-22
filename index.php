@@ -1,6 +1,6 @@
 <?php include (TEMPLATEPATH . '/partials/_header.php'); ?>
 		
-	<section class="wrap-main  lc">
+	<section class="wrap-main  lc  clear">
 
 		<!-- Category name, h1 -->
 
@@ -26,8 +26,8 @@
 					?>
 					<figure class="product__figure  img-text__container  img-container">
 						<a href="<?php echo $thumb_large_url; ?>">
-							<img src="<?php echo $thumb_url; ?>" />
-							<h1 class="h1  img-text__title  img-text__title--product"><span class="img-text__bg"><?php the_title(); ?></span></h1>
+							<img class="product__img" src="<?php echo $thumb_url; ?>" />
+							<h1 class="h2  img-text__title  img-text__title--product"><span class="img-text__bg"><?php the_title(); ?></span></h1>
 						</a>
 					</figure>
 					<?php } ?>					

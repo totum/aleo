@@ -2,19 +2,31 @@
 //   Grid
 // -------------------------------------
 
+
 .img-grid__itm {
-	width: 48%;
-	height: 140px;
+	width: $laptop-side-element;
+	//height: 200px;
+	height: $laptop-side-element;
 	margin-bottom: 20px;
 	overflow: hidden;
 	float: right;
 	display: block;
+	background-color: blue;
 }
 
-.img-grid__itm li:nth-child(odd) {
-	margin-left: 4%;
+.img-grid__itm:nth-child(odd) {
+	//margin-left: 4%;
+}
+
+.sidebar-entry {
 }
 
 .img-grid__img {
+	height: 100%;
+		width: 100%;
 		opacity: 0.5;
+}
+
+lol {
+	
 }

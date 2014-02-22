@@ -1,1 +1,73 @@
 // font face and global vars
+
+// Dimensions for use in RWD
+
+// Content Left-side width
+
+
+// Susy init
+$susy: (
+	columns: 12,
+	gutters: 1/4, //$gutter-width / $column-width,
+	//column-width: 4em,
+	//container: 64em,
+	math: fluid,
+	//flow: if($from-direction == right, rtl, ltr),
+	//last-flow: if($omega-float == $from-direction, from, to),
+	debug: (
+    	image: $grid-image,
+    ),
+	global-box-sizing: border-box,
+);
+
+$laptop-side-element: 2.4/13 * 40em; //12em;
+
+/*
+span(x of y <math>)
+gutter(x <math>)
+
+@include container(x columns);
+@include breakpoint(y em) {max-width: container(z columns);}
+
+@include susy-breakpoint is like breakpoint but with added with-layout
+@with-layout is like with-grid-settings
+@layout sets global layout. maybe us eon body?
+*/
+// what is body font at? how much is 1em?
+/*
+$container-width	: 64em; //20em;				// 320px as mobile standard.
+$container-style	: fluid;			// fluid as mobile standard.
+
+// Mobile first!
+$total-columns		: 8; //4;				// Mobile first
+$column-width		: 3.1em;			// each column is 3.1em wide.
+$gutter-width		: 1.2em;          	// 1em gutters between columns
+$grid-padding		: $gutter-width;	// grid-padding equal to gutters
+// Retina mode?
+
+$tablet-break		: 45em 10;		// break at 720 pixels
+$tablet-c			: 10;	
+$tablet-w			: 45em;
+$tablet-t			: 4em;			// top (and menu) height tablet
+$tablet-gridp		: 1.5em;
+// Retina mode?
+
+$laptop-break		: 64em 13;		// break at 1024 pixels
+$laptop-c			: 13;
+$laptop-w			: 64em;
+$laptop-t			: 5em;
+$laptop-gridp		: 2em;
+
+
+$laptop-pw: 7;
+// Retina mode?
+
+$desktop-break		: 80em 13;	// break at 1280 pixels
+$desktop-c			: 13;
+$desktop-w			: 80em;
+$desktop-t			: 5em;
+$desktop-gridp		: 4em;
+// Retina mode?
+*/
+
+$test-wh: 580px;
