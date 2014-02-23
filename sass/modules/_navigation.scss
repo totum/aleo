@@ -25,11 +25,7 @@
 			display: block;
 			padding-left: 0.5em;
 			padding-right: 0.5em;
-			text-decoration: none;
-			box-sizing: content-box;
-			//border-top: 4px solid black;
 			border-bottom: hsl(0,10%,90%);
-			@include trailing-border(2px, .25);
 
 			&:hover {
 				background-color: hsl(0,10%,90%);

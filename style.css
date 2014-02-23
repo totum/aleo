@@ -803,14 +803,9 @@ body::after {
   display: block;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  text-decoration: none;
-  box-sizing: content-box;
   border-bottom: #e8e3e3;
-  border-bottom-width: 0.125em;
-  border-bottom-style: solid;
-  padding-bottom: 0.25em;
 }
-/* line 34, sass/modules/_navigation.scss */
+/* line 30, sass/modules/_navigation.scss */
 .menu li > a:hover {
   background-color: #e8e3e3;
   color: black;
