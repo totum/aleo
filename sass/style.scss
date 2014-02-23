@@ -25,10 +25,10 @@ $strict-normalize: false !default;
 $base-font-family: sans-serif !default;
 
 // The base font size.
-$base-font-size: 16px !default; // Override default set in Compass' Vertical Rhythm partial.
+$base-font-size: 16px; //!default; // Override default set in Compass' Vertical Rhythm partial.
 
 // The base line height determines the basic unit of vertical rhythm.
-$base-line-height: 24px !default; // Override default set in Compass' Vertical Rhythm partial.
+$base-line-height: 24px; //!default; // Override default set in Compass' Vertical Rhythm partial.
 
 // The font sizes for .h1-h6.
 $h1-font-size: 1.8    * $base-font-size !default;

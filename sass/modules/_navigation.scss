@@ -21,18 +21,20 @@
 
 		.menu li > a {
 			color: white;
-			font-size: 100%;
+			//font-size: 100%;
 			display: block;
-			padding: 0.4em 0.5em 0.4em 0.5em;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
 			text-decoration: none;
 			box-sizing: content-box;
-			border-top: 4px solid black;
-			border-bottom: 4px solid black;
+			//border-top: 4px solid black;
+			border-bottom: hsl(0,10%,90%);
+			@include trailing-border(2px, .25);
 
 			&:hover {
 				background-color: hsl(0,10%,90%);
 				color: black;
-				border-bottom: 4px solid hsl(0,10%,90%);
+				//border-bottom: 4px solid hsl(0,10%,90%);
 			}
 		}
 		//.menu .current-menu-item > a {

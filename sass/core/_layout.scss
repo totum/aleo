@@ -4,8 +4,19 @@ body {
 	@include container($susy);
 }
 
-.site-header,
-.menu,
+.site-header {
+	//background-color: black;
+}
+
+.header-bar {
+	//@include span(12 of 12 nest);
+	//@include pad(2 of 12);
+	background-color: black;
+	//@include box-sizing(border-box);
+}
+
+//.site-header,
+//.menu,
 .wrap-main {
 	//margin: 0 auto;
 	//@include layout(8);
@@ -14,28 +25,41 @@ body {
 	//background-color: yellow;
 }
 
+.site-tagline,
 .nav-main {
+	//display: inline;
+	@include pre(2 of 12);
+	@include suffix(2 of 12);
+	//@include span(8 at 3 of 12);
 	background-color: black;
-	@include span(12 of 12);
 }
 
 .site-logo {
-	
-	font-size: 400%;
-	line-height: 1em;
-	padding-top: 0.2em;
-	margin: 0;
+	@include span(isolate 2 of 12);
+	padding-right: gutter(12);
+	@include adjust-font-size-to(64px);
+	background-color: white;
+	margin-top: 0;
+	margin-bottom: 0;
 	a {
-		color: black;
+		color: #000;
 		text-decoration: none;
 	}
 
 }
 
-.site-tagline {
-	font-weight: normal;
-	margin: 0;
+.site-tagline,
+.menu > li > a {
+	color: #fff;
+	@include adjust-font-size-to(15px);
+	@include rhythm(0, .25, .25, 0, 15px);
 }
+
+.site-tagline {
+	display: block;
+	font-style: italic;
+}
+
 
 
 .content--left {

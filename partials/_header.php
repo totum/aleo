@@ -11,9 +11,9 @@
 
 <body>
 	<header class="site-header  lc  clear">
-		<h1 class="site-logo"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></h1>
-		<h2 class="site-tagline  h4"><?php bloginfo('description'); ?></h2>
+		<h1 class="site-logo  center  clear"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></h1>
+		<span class="site-tagline  right"><?php bloginfo('description'); ?></span>
+		<nav class="nav-main  nav">
+			<?php wp_nav_menu( array( 'container' => false ) ); ?>
+		</nav>
 	</header>
-	<nav class="nav-main  nav  lc  clear">
-		<?php wp_nav_menu( array( 'container' => false ) ); ?>
-	</nav>
