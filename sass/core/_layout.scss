@@ -8,19 +8,14 @@ body {
 	//background-color: black;
 }
 
-.header-bar {
-	//@include span(12 of 12 nest);
-	//@include pad(2 of 12);
-	background-color: black;
-	//@include box-sizing(border-box);
-}
 
 //.site-header,
 //.menu,
 .wrap-main {
 	//margin: 0 auto;
 	//@include layout(8);
-	@include span(isolate 8 at 3 of 12);
+	margin-top: rhythm(1, 15px);
+	@include span(isolate 8 at 3 of 12 nest);
 	//@include container(8 of 10);
 	//background-color: yellow;
 }
@@ -31,13 +26,16 @@ body {
 	@include pre(2 of 12);
 	@include suffix(2 of 12);
 	//@include span(8 at 3 of 12);
+}
+.nav-main {
 	background-color: black;
 }
 
 .site-logo {
 	@include span(isolate 2 of 12);
+	margin-right: 0;
 	padding-right: gutter(12);
-	@include adjust-font-size-to(64px);
+	@include adjust-font-size-to(60px);
 	background-color: white;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -50,32 +48,23 @@ body {
 
 .site-tagline,
 .menu > li > a {
-	color: #fff;
-	@include adjust-font-size-to(15px);
-	@include rhythm(0, .25, .25, 0, 15px);
+	@include rhythm(0, .25, .25, 0, 15px); // chrome bug>
 }
 
 .site-tagline {
 	display: block;
-	font-style: italic;
+	background-color: #fff;
 }
 
 
 
 .content--left {
-	//float: left;
 	@include span(isolate 5 of 8);
-	//width: $test-wh;
-	overflow: hidden;
-	background-color: red;
 }
 
 .sidebar {
 	//margin-left:680px;
-	@include span(last 3 of 8 fluid);
+	@include span(last 3 of 8 nest);
 	//@include span-columns(3 omega);
 	//width: 300px;
-	padding-top: 3em;
-	overflow: hidden;
-	background-color: green;
 }

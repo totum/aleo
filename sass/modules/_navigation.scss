@@ -20,12 +20,11 @@
 }
 
 		.menu li > a {
-			color: white;
-			//font-size: 100%;
 			display: block;
 			padding-left: 0.5em;
 			padding-right: 0.5em;
 			border-bottom: hsl(0,10%,90%);
+			text-decoration: none;
 
 			&:hover {
 				background-color: hsl(0,10%,90%);

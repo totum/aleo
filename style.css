@@ -74,14 +74,14 @@ template {
 html {
   font-family: sans-serif;
   /* 1 */
-  font-size: 100%;
+  font-size: 93.75%;
   /* 3 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   /* Establish a vertical rhythm unit using $base-line-height. */
-  line-height: 1.5em;
+  line-height: 1.46667em;
 }
 
 /**
@@ -129,13 +129,13 @@ a:hover {
 /* line 148, sass/core/_reset.scss */
 p,
 pre {
-  margin: 1.5em 0;
+  margin: 1.46667em 0;
 }
 
 /* line 153, sass/core/_reset.scss */
 blockquote {
   /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 40px;
+  margin: 1.46667em 40px;
 }
 
 /**
@@ -146,50 +146,50 @@ blockquote {
 .h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 1.8em;
-  line-height: 1.66667em;
+  line-height: 1.62963em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.83333em;
-  margin-bottom: 0.83333em;
+  margin-top: 0.81481em;
+  margin-bottom: 0.81481em;
 }
 
 /* line 179, sass/core/_reset.scss */
 .h2 {
   font-size: 1.4em;
-  line-height: 2.14286em;
-  margin-top: 1.07143em;
-  margin-bottom: 1.07143em;
+  line-height: 2.09524em;
+  margin-top: 1.04762em;
+  margin-bottom: 1.04762em;
 }
 
 /* line 185, sass/core/_reset.scss */
 .h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
-  margin-top: 1.28205em;
-  margin-bottom: 1.28205em;
+  line-height: 1.25356em;
+  margin-top: 1.25356em;
+  margin-bottom: 1.25356em;
 }
 
 /* line 191, sass/core/_reset.scss */
 .h4 {
   font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  line-height: 1.46667em;
+  margin-top: 1.46667em;
+  margin-bottom: 1.46667em;
 }
 
 /* line 197, sass/core/_reset.scss */
 .h5 {
   font-size: 0.83em;
-  line-height: 1.80723em;
-  margin-top: 1.80723em;
-  margin-bottom: 1.80723em;
+  line-height: 1.76707em;
+  margin-top: 1.76707em;
+  margin-bottom: 1.76707em;
 }
 
 /* line 203, sass/core/_reset.scss */
 .h6 {
   font-size: 0.67em;
-  line-height: 2.23881em;
-  margin-top: 2.23881em;
-  margin-bottom: 2.23881em;
+  line-height: 2.18905em;
+  margin-top: 2.18905em;
+  margin-bottom: 2.18905em;
 }
 
 /**
@@ -247,7 +247,7 @@ pre,
 samp {
   font-family: monospace, serif;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.46667em;
 }
 
 /**
@@ -307,7 +307,7 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1.5em 0;
+  margin: 1.46667em 0;
 }
 
 /* line 343, sass/core/_reset.scss */
@@ -374,18 +374,18 @@ fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
   border-color: #c0c0c0;
-  border-top-width: 0.0625em;
+  border-top-width: 0.06667em;
   border-top-style: solid;
-  padding-top: 0.4625em;
-  border-bottom-width: 0.0625em;
+  padding-top: 0.44667em;
+  border-bottom-width: 0.06667em;
   border-bottom-style: solid;
-  padding-bottom: 0.9125em;
-  border-left-width: 0.0625em;
+  padding-bottom: 0.88667em;
+  border-left-width: 0.06667em;
   border-left-style: solid;
-  padding-left: 0.875em;
-  border-right-width: 0.0625em;
+  padding-left: 0.85em;
+  border-right-width: 0.06667em;
   border-right-style: solid;
-  padding-right: 0.875em;
+  padding-right: 0.85em;
 }
 
 /**
@@ -600,26 +600,31 @@ body {
 }
 
 /* line 11, sass/core/_base.scss */
+.menu > li > a {
+  color: #fff;
+}
+
+/* line 17, sass/core/_base.scss */
 .img-container {
   overflow: hidden;
 }
 
-/* line 15, sass/core/_base.scss */
+/* line 21, sass/core/_base.scss */
 .center {
   text-align: center;
 }
 
-/* line 17, sass/core/_base.scss */
+/* line 23, sass/core/_base.scss */
 .left {
   text-align: left;
 }
 
-/* line 19, sass/core/_base.scss */
+/* line 25, sass/core/_base.scss */
 .right {
   text-align: right;
 }
 
-/* line 23, sass/core/_base.scss */
+/* line 29, sass/core/_base.scss */
 .clear {
   clear: both;
 }
@@ -636,14 +641,6 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-size: 8.47458%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
 }
 /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
 body::after {
@@ -652,96 +649,97 @@ body::after {
   clear: both;
 }
 
-/* line 11, sass/core/_layout.scss */
-.header-bar {
-  background-color: black;
-}
-
-/* line 20, sass/core/_layout.scss */
+/* line 14, sass/core/_layout.scss */
 .wrap-main {
+  margin-top: 1.46667em;
   width: 66.10169%;
   float: left;
   margin-left: 16.94915%;
   margin-right: -100%;
 }
 
-/* line 28, sass/core/_layout.scss */
+/* line 23, sass/core/_layout.scss */
 .site-tagline,
 .nav-main {
   margin-left: 16.94915%;
   padding-right: 16.94915%;
+}
+
+/* line 30, sass/core/_layout.scss */
+.nav-main {
   background-color: black;
 }
 
-/* line 37, sass/core/_layout.scss */
+/* line 34, sass/core/_layout.scss */
 .site-logo {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
+  margin-right: 0;
   padding-right: 1.69492%;
   font-size: 4em;
-  line-height: 1.125em;
+  line-height: 1.1em;
   background-color: white;
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 44, sass/core/_layout.scss */
+/* line 42, sass/core/_layout.scss */
 .site-logo a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 51, sass/core/_layout.scss */
+/* line 49, sass/core/_layout.scss */
 .site-tagline,
 .menu > li > a {
-  color: #fff;
-  font-size: 0.9375em;
-  line-height: 1.6em;
   margin-top: 0em;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
+  padding-top: 0.36667em;
+  padding-bottom: 0.36667em;
   margin-bottom: 0em;
 }
 
-/* line 58, sass/core/_layout.scss */
+/* line 54, sass/core/_layout.scss */
 .site-tagline {
   display: block;
-  font-style: italic;
+  background-color: #fff;
 }
 
-/* line 65, sass/core/_layout.scss */
+/* line 61, sass/core/_layout.scss */
 .content--left {
   width: 61.53846%;
   float: left;
   margin-right: 2.5641%;
-  overflow: hidden;
-  background-color: red;
 }
 
-/* line 73, sass/core/_layout.scss */
+/* line 65, sass/core/_layout.scss */
 .sidebar {
   width: 35.89744%;
   float: right;
-  padding-top: 3em;
-  overflow: hidden;
-  background-color: green;
 }
 
 /* line 6, sass/modules/_grid.scss */
 .img-grid__itm {
-  width: 7.38462em;
-  height: 7.38462em;
-  margin-bottom: 20px;
   overflow: hidden;
-  float: right;
   display: block;
-  background-color: blue;
 }
 
-/* line 24, sass/modules/_grid.scss */
+/* line 11, sass/modules/_grid.scss */
+.img-grid__itm:nth-child(odd) {
+  width: 44.44444%;
+  float: right;
+}
+
+/* line 14, sass/modules/_grid.scss */
+.img-grid__itm:nth-child(even) {
+  width: 44.44444%;
+  float: left;
+  margin-right: 11.11111%;
+}
+
+/* line 20, sass/modules/_grid.scss */
 .img-grid__img {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   opacity: 0.5;
 }
 
@@ -799,22 +797,27 @@ body::after {
 
 /* line 22, sass/modules/_navigation.scss */
 .menu li > a {
-  color: white;
   display: block;
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-bottom: #e8e3e3;
+  text-decoration: none;
 }
-/* line 30, sass/modules/_navigation.scss */
+/* line 29, sass/modules/_navigation.scss */
 .menu li > a:hover {
   background-color: #e8e3e3;
   color: black;
 }
 
 /* line 1, sass/modules/_sidebar.scss */
-.sidebar__entry:hover .img-text__title,
-.sidebar__entry:hover .img-text__img {
+.sidebar__figure:hover .img-text__title,
+.sidebar__figure:hover .img-text__img {
   opacity: 1;
+}
+
+/* line 6, sass/modules/_sidebar.scss */
+.sidebar__list {
+  margin-top: 66.10169%;
 }
 
 /* line 3, sass/modules/_product.scss */
@@ -825,6 +828,6 @@ body::after {
 
 /* line 9, sass/modules/_product.scss */
 .product__img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }

@@ -12,7 +12,7 @@
 <body>
 	<header class="site-header  lc  clear">
 		<h1 class="site-logo  center  clear"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></h1>
-		<span class="site-tagline  right"><?php bloginfo('description'); ?></span>
+		<span class="site-tagline  left"><?php bloginfo('description'); ?></span>
 		<nav class="nav-main  nav">
 			<?php wp_nav_menu( array( 'container' => false ) ); ?>
 		</nav>

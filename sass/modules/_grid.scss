@@ -4,29 +4,21 @@
 
 
 .img-grid__itm {
-	width: $laptop-side-element;
-	//height: 200px;
-	height: $laptop-side-element;
-	margin-bottom: 20px;
 	overflow: hidden;
-	float: right;
 	display: block;
-	background-color: blue;
 }
 
 .img-grid__itm:nth-child(odd) {
-	//margin-left: 4%;
+	@include span(last 1 of 2);
 }
-
-.sidebar-entry {
+.img-grid__itm:nth-child(even) {
+	@include span(1 of 2);
+}
+.sidebar-figure {
 }
 
 .img-grid__img {
-	height: 100%;
-		width: 100%;
-		opacity: 0.5;
-}
-
-lol {
-	
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 0.5;
 }

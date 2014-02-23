@@ -11,7 +11,12 @@ Version: 0.1a
 // -------------------------------------
 //   Dev-mode variables
 // -------------------------------------
-$grid-image: show;
+$grid-image: hide;
+
+@import "compass/support";
+@import "compass/css3/box-sizing";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
 
 
 // -------------------------------------
@@ -25,10 +30,10 @@ $strict-normalize: false !default;
 $base-font-family: sans-serif !default;
 
 // The base font size.
-$base-font-size: 16px; //!default; // Override default set in Compass' Vertical Rhythm partial.
+$base-font-size: 15px; //!default; // Override default set in Compass' Vertical Rhythm partial.
 
 // The base line height determines the basic unit of vertical rhythm.
-$base-line-height: 24px; //!default; // Override default set in Compass' Vertical Rhythm partial.
+$base-line-height: 22px; //!default; // Override default set in Compass' Vertical Rhythm partial.
 
 // The font sizes for .h1-h6.
 $h1-font-size: 1.8    * $base-font-size !default;
@@ -48,10 +53,7 @@ $legacy-support-for-ie6: false !default; // Override default set in Compass' Sup
 $legacy-support-for-ie7: false !default; // Override default set in Compass' Support partial.
 
 
-@import "compass/support";
-@import "compass/css3/box-sizing";
-@import "compass/css3";
-@import "compass/typography/vertical_rhythm";
+
 @import "susy";
 @import "breakpoint";
 

@@ -33,7 +33,7 @@
 									//$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-large', true );
 									//$thumb_large_url = $thumb_large['0'];
 								?>
-								<figure class="sidebar__entry img-grid__container  img-text__container  img-container">
+								<figure class="sidebar__figure img-grid__container  img-text__container  img-container">
 									<a href="<?php the_permalink() ?>">
 										<img class="img-grid__img  img-text__img  trans-opac-025" src="<?php echo $thumb_url; ?>" />
 										<h2 class="h5  img-text__title  img-text__title--img-grid trans-opac-025"><span class="img-text__bg"><?php the_title(); ?></span></h2>
