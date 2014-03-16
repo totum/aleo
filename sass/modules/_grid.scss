@@ -6,13 +6,16 @@
 .img-grid__itm {
 	overflow: hidden;
 	display: block;
+	@include gallery(4 of 8);
 }
 
 .img-grid__itm:nth-child(odd) {
-	@include span(last 1 of 2);
+	// susy-get(container, $large);
+
+	//@include span(last 1 of 2);
 }
 .img-grid__itm:nth-child(even) {
-	@include span(1 of 2);
+	//@include span(1 of 2);
 }
 .sidebar-figure {
 }

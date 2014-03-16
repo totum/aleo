@@ -721,22 +721,24 @@ body::after {
 .img-grid__itm {
   overflow: hidden;
   display: block;
-}
-
-/* line 11, sass/modules/_grid.scss */
-.img-grid__itm:nth-child(odd) {
-  width: 44.44444%;
-  float: right;
-}
-
-/* line 14, sass/modules/_grid.scss */
-.img-grid__itm:nth-child(even) {
-  width: 44.44444%;
+  width: 48.71795%;
   float: left;
-  margin-right: 11.11111%;
+}
+/* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+.img-grid__itm:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+.img-grid__itm:nth-child(2n + 2) {
+  margin-left: 51.28205%;
+  margin-right: -100%;
+  clear: none;
 }
 
-/* line 20, sass/modules/_grid.scss */
+/* line 23, sass/modules/_grid.scss */
 .img-grid__img {
   max-height: 100%;
   max-width: 100%;
@@ -823,10 +825,9 @@ body::after {
 /* line 3, sass/modules/_product.scss */
 .product__figure {
   width: 100%;
-  background-color: yellow;
 }
 
-/* line 9, sass/modules/_product.scss */
+/* line 8, sass/modules/_product.scss */
 .product__img {
   max-width: 100%;
   max-height: 100%;

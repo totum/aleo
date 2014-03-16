@@ -81,6 +81,8 @@ $legacy-support-for-ie7: false !default; // Override default set in Compass' Sup
 
 @import "core/states";
 
+@import "core/content";
+
 // ----- Layout ----- //
 
 @import "core/layout";
@@ -91,7 +93,7 @@ $legacy-support-for-ie7: false !default; // Override default set in Compass' Sup
 
 @import "modules/button";
 
-@import "modules/content";
+
 
 @import "modules/grid";
 
