@@ -24,7 +24,7 @@
 						$aside_post_id = get_the_ID();
 						if ( $aside_post_id == $main_post_id ) : continue;						
 						else : ?>
-							<li class="img-grid__itm">
+							<li class="sidebar__item  img-grid__itm  img-text__container  img-grid__container">
 								<?php
 								// Checks for post selected image. Inserts if true.
 								if( has_post_thumbnail() ) {
@@ -33,12 +33,10 @@
 									//$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-large', true );
 									//$thumb_large_url = $thumb_large['0'];
 								?>
-								<figure class="sidebar__figure img-grid__container  img-text__container  img-container">
-									<a href="<?php the_permalink() ?>">
-										<img class="img-grid__img  img-text__img  trans-opac-025" src="<?php echo $thumb_url; ?>" />
-										<h2 class="h5  img-text__title  img-text__title--img-grid trans-opac-025"><span class="img-text__bg"><?php the_title(); ?></span></h2>
-									</a>
-								</figure>
+								<a href="<?php the_permalink() ?>">
+									<img class="sidebar__item__img  img-grid__img  img-text__img" src="<?php echo $thumb_url; ?>" />
+									<h2 class="sidebar__item__title  h5  img-text__title  img-text__title--img-grid"><span class="img-text__bg"><?php the_title(); ?></span></h2>
+								</a>
 								<?php } ?>
 								
 							</li>

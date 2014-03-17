@@ -1,3 +1,19 @@
 // -------------------------------------
 //   Content
 // -------------------------------------
+.site-logo {
+	background-color: white;
+	@extend %ore-l-center;
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+}
+.site-tagline {
+	background-color: #fff;
+}
+
+
+.nav-list {
+	padding: 0;
+}

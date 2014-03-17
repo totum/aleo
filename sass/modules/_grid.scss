@@ -2,26 +2,39 @@
 //   Grid
 // -------------------------------------
 
-
 .img-grid__itm {
 	overflow: hidden;
 	display: block;
-	@include gallery(4 of 8);
+	padding-bottom: 0.3em;
+	@include span(2 of 2);
 }
 
-.img-grid__itm:nth-child(odd) {
-	// susy-get(container, $large);
+@include breakpoint($l-break-large) {
+	.img-grid__itm:nth-child(odd) {
+		@include with-layout(2 1/200) {
+			@include span(first 1 of 2);
+		}
+		padding-right: 0.15em;
+	}
+	.img-grid__itm:nth-child(even) {
+		@include with-layout(2 1/200) {
+			@include span(last 1 of 2);
+		}
+		padding-left: 0.15em;
 
-	//@include span(last 1 of 2);
-}
-.img-grid__itm:nth-child(even) {
-	//@include span(1 of 2);
-}
-.sidebar-figure {
+	}
+
+	.img-grid__itm:first-child {
+		@include with-layout(2 1/200) {
+			@include span(first 1 of 2);
+		}
+		margin-right: 50%; // Block first right item in 2 layout
+	}
 }
 
 .img-grid__img {
 	max-height: 100%;
 	max-width: 100%;
-	opacity: 0.5;
+		opacity: 0.5;
+	@extend %ore-t__all--050;
 }

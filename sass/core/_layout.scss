@@ -1,70 +1,89 @@
 // Base-level layout (margin, padding, sizing).
-
-body {
-	@include container($susy);
-}
-
-.site-header {
-	//background-color: black;
-}
-
-
-//.site-header,
-//.menu,
+.site-header,
 .wrap-main {
-	//margin: 0 auto;
-	//@include layout(8);
-	margin-top: rhythm(1, 15px);
-	@include span(isolate 8 at 3 of 12 nest);
-	//@include container(8 of 10);
-	//background-color: yellow;
+	@include container($s-container);
 }
 
-.site-tagline,
-.nav-main {
-	//display: inline;
-	@include pre(2 of 12);
-	@include suffix(2 of 12);
-	//@include span(8 at 3 of 12);
-}
-.nav-main {
-	background-color: black;
-}
 
-.site-logo {
-	@include span(isolate 2 of 12);
-	margin-right: 0;
-	padding-right: gutter(12);
-	@include adjust-font-size-to(60px);
-	background-color: white;
-	margin-top: 0;
-	margin-bottom: 0;
-	a {
-		color: #000;
-		text-decoration: none;
+	.site-banner {
+		@include span(first 10 of 12 nest);
+		@include breakpoint($l-break-medium) {
+			@include span(12 of 12 nest);
+		}
+		background-color: white;
 	}
 
-}
+		.site-logo {
+			@include span(first 3 of 10);
+			@include adjust-font-size-to(3em);
+			@extend %ore-m--0;
 
-.site-tagline,
-.menu > li > a {
-	@include rhythm(0, .25, .25, 0, 15px); // chrome bug>
-}
+			@include breakpoint($l-break-medium) {
+				@include span(isolate 2 of 12);
+				@include adjust-font-size-to(4em);
+			}
+		}
 
-.site-tagline {
-	display: block;
-	background-color: #fff;
-}
+		.site-tagline {
+			display: block;
+			@include span(last 7 of 10);
+			@include adjust-font-size-to(1em);
+			@include rhythm(0, .50, .50, 0, 15px); // chrome bug>
 
+			@include breakpoint($l-break-medium) {
+				@include span(last 10 of 12);
+				// @include pre(2 of 12);
+				@include suffix(2 of 12);
+				@include rhythm(0, .25, .25, 0, 15px); // chrome bug ??
+			}
+			
+		}
+
+	.nav-main {
+		background-color: white;
+		// And 100% width in mobile
+		@include breakpoint($l-break-medium) {
+			background-color: black;
+			@include span(last 10 of 12);
+			// @include pre(2 of 12);
+			@include suffix(2 of 12);
+			margin-top: - rhythm(1.5, 15px);
+			
+			.menu >li > a {
+				@include rhythm(0, .25, .25, 0, 15px);
+			}
+		}
+	}
+
+
+.wrap-main {
+	@include leader(1);
+}
 
 
 .content--left {
-	@include span(isolate 5 of 8);
+	// @include span(12 of 12); not needed, 100% by default.
+
+	@include breakpoint($l-break-medium) {
+		@include pre(2 of 12);
+		@include span(6 of 12);
+		margin-right: 0;
+	}
+	@include breakpoint($l-break-large) {
+		@include pre(2 of 12);
+		@include span(5 of 12);
+		margin-right: 0;
+	}
 }
 
 .sidebar {
-	//margin-left:680px;
-	@include span(last 3 of 8 nest);
-	//@include span-columns(3 omega);
-	//width: 300px;
+	@include span (8 of 12 at 3 nest);
+	@include breakpoint($l-break-medium) {
+		@include span(2 of 12 at 8 wide nest);
+		padding-left: $base-line-height; // Whitespace same as 1 line
+	}
+	@include breakpoint($l-break-large) {
+		@include span(3 of 12 at 8 wide nest);
+		padding-left: $base-line-height;
+	}
 }

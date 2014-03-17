@@ -3,10 +3,54 @@
 
 // Base-level typography (colors, fonts).
 
+
+html {
+    -webkit-font-smoothing: antialiased; //maxvoltar.com/archive/-webkit-font-smoothing
+    overflow-y: scroll; // force scrollbar to avoid jumping content
+}
+
 body {
 	background-color: hsl(0,10%,90%);
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+
+p {
+    @extend %ore-m__topbottom--base !optional;
+}
+
+// ----- Headings ----- //
+
+h1, .h1 {
+    @include adjust-font-size-to( $h1-font-size );
+    @include leader(1, $h1-font-size);
+    @include trailer(1, $h1-font-size);
+}
+h2, .h2 {
+    @include adjust-font-size-to( $h2-font-size );
+    @include leader(1, $h2-font-size);
+    @include trailer(1, $h2-font-size);
+}
+h3, .h3 {
+    @include adjust-font-size-to( $h3-font-size );
+    @include leader(1, $h3-font-size);
+    @include trailer(1, $h3-font-size);
+}
+h4, .h4 {
+    @include adjust-font-size-to( $h4-font-size );
+    @include leader(1, $h4-font-size);
+    @include trailer(1, $h4-font-size);
+}
+h5, .h5 {
+    @include adjust-font-size-to( $h5-font-size );
+    @include leader(1, $h5-font-size);
+    @include trailer(1, $h5-font-size);
+}
+h6, .h6 {
+    @include adjust-font-size-to( $h6-font-size );
+    @include leader(1, $h6-font-size);
+    @include trailer(1, $h6-font-size);
+}
+
 
 .menu > li > a {
 	color: #fff;
@@ -25,7 +69,6 @@ body {
 } .right {
 	text-align: right;
 }
-
 .clear {
 	clear: both;
 }

@@ -10,10 +10,21 @@
 </head>
 
 <body>
-	<header class="site-header  lc  clear">
-		<h1 class="site-logo  center  clear"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></h1>
-		<span class="site-tagline  left"><?php bloginfo('description'); ?></span>
-		<nav class="nav-main  nav">
+	<div class="site-header  lc">
+		<header role="banner" class="site-banner">
+			<?php
+			// Only use h1 for logo on homepage, else span - for SEO.
+			if ( is_front_page() ) { ?>
+				<h1 class="site-logo"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></h1>
+			<?php } else { ?>
+				<span class="site-logo"><a href="http://www.aleo.dk"><?php bloginfo('name'); ?></a></span>
+			<?php }
+			?>
+			<span class="site-tagline"><?php bloginfo('description'); ?></span>
+		</header>
+		<nav role="navigation" class="nav-main  nav">
+			<input type="checkbox" id="toggle-nav" aria-hidden="true">
+			<label for="toggle-nav" data-icon="menu" aria-hidden="true">Menu</label>
 			<?php wp_nav_menu( array( 'container' => false ) ); ?>
 		</nav>
-	</header>
+	</div>

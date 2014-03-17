@@ -1,10 +1,14 @@
-.sidebar__figure:hover .img-text__title,
-.sidebar__figure:hover .img-text__img {
+.sidebar__item:hover .img-text__title,
+.sidebar__item:hover .img-text__img {
 	opacity: 1;
 }
 
 .sidebar__list {
-	margin-top: span(8);
+	margin-top: span(2);
+	line-height: 0; // to avoid weird bottom margin
+
 }
+
+
 // set sidebar as container! for grid inside.
 // maybe define in grid...

@@ -1,37 +1,68 @@
-.nav-list {
-	padding: 0;
-	margin: 0; // get rid of this margin and paddingwhen setting sidebar for grid
-	list-style-type: none;
+.nav-main {
+	
 }
 
-// tweak menu walker to include nav-list on primary menu. get riud of .menu
-.menu {
-	list-style-type: none;
-	box-sizing: border-box;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0;
-	text-align: right;
+	[for="toggle-nav"] {
+		@include span(last 2 of 12);
+		@include rhythm(0, 1, 1, 0, 15px);
+		@extend %ore-l-center;
+		@include breakpoint($l-break-medium) {
+			display: none;
+		}
+	}
 
+	[id="toggle-nav"] {
+		@extend %is-hidden;
+	}
+
+	[id="toggle-nav"]:checked ~.menu {
+		@extend %ore-n--toggle__checked;
+	}
+
+
+
+.menu {
+	@extend %ore-n--toggle__list;
+	list-style-type: none;
+	text-align: left;
+	background-color: black;
+	padding-left: 0;
 	li {
-		display: inline-block;
-		margin-left: 0.5em;
+		display: block;
+		@include prefix(3 of 12);
+	}
+	li > a {
+		display: block;
+		text-decoration: none;
+		&:hover {
+			background-color: hsl(0,10%,90%);
+			color: black;
+		}	
 	}
 }
 
-		.menu li > a {
-			display: block;
+@include breakpoint($l-break-medium) {
+	.menu {
+		max-height: 3em;
+		margin: 0;
+		text-align: right;
+		li {
+			display: inline-block;
+			margin-left: 0.5em;
 			padding-left: 0.5em;
-			padding-right: 0.5em;
-			border-bottom: hsl(0,10%,90%);
-			text-decoration: none;
-
-			&:hover {
-				background-color: hsl(0,10%,90%);
-				color: black;
-				//border-bottom: 4px solid hsl(0,10%,90%);
-			}
 		}
+	}
+	.menu li > a {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		border-bottom: hsl(0,10%,90%);
+//border-bottom: 4px solid hsl(0,10%,90%);
+	}
+}
+
+// tweak menu walker to include nav-list on primary menu. get riud of .menu
+
+		
 		//.menu .current-menu-item > a {
 		//	border-bottom: 4px solid hsl(0,10%,90%);
 		//}
