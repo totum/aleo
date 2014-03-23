@@ -11,6 +11,7 @@
 }
 
 .img-text__container {
+	@extend %display-block;
 	position: relative;
 }
 

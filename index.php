@@ -24,15 +24,15 @@
 					$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-xlarge', true );
 					$thumb_large_url = $thumb_large['0'];
 					?>
-					<figure class="product__figure  img-text__container  img-container">
-						<a href="<?php echo $thumb_large_url; ?>">
+						<a href="<?php echo $thumb_large_url; ?>" class="img-text__container  img-container">
 							<img class="product__img" src="<?php echo $thumb_url; ?>" />
 							<h1 class="h2  img-text__title  img-text__title--product"><span class="img-text__bg"><?php the_title(); ?></span></h1>
 						</a>
-					</figure>
-					<?php } ?>					
-	
-					<?php the_content(); ?>
+				<?php } ?>	
+
+				<?php include (TEMPLATEPATH . '/ore/ore_template-featuredgallery.php'); ?>
+
+				<?php the_content(); ?>
 					
 			<?php endwhile; ?>
 		<?php else : ?>

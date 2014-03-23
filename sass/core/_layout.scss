@@ -3,15 +3,33 @@
 .wrap-main {
 	@include container($s-container);
 }
+.wrap-main {
+	@include breakpoint($l-break-xlarge) {
+		@include container($s-container-xlarge);
+	}
+}
 
+
+.site-header {
+	padding-top: 1px; // Avoid margin collapsing in FF
+	background-color: white;
+	@include breakpoint($l-break-xlarge) {
+		background: 0; // Reset grid background on dev
+		background-color: white;
+	}
+}
 
 	.site-banner {
 		@include span(first 10 of 12 nest);
 		@include breakpoint($l-break-medium) {
 			@include span(12 of 12 nest);
 		}
-		background-color: white;
+		@include breakpoint($l-break-xlarge) {
+			float: none; // Reset float
+			@include container($s-container-xlarge);
+		}
 	}
+
 
 		.site-logo {
 			@include span(first 3 of 10);
@@ -19,25 +37,42 @@
 			@extend %ore-m--0;
 
 			@include breakpoint($l-break-medium) {
-				@include span(isolate 2 of 12);
+				@include span(first 2 of 12 wide);
+				margin-right: 0; // Allow tagline to float up
 				@include adjust-font-size-to(4em);
 			}
 		}
 
 		.site-tagline {
-			display: block;
 			@include span(last 7 of 10);
 			@include adjust-font-size-to(1em);
-			@include rhythm(0, .50, .50, 0, 15px); // chrome bug>
+			height: 4.5em;
+			//@include rhythm(0, .50, .50, 0, 15px); // chrome bug>
 
 			@include breakpoint($l-break-medium) {
 				@include span(last 10 of 12);
-				// @include pre(2 of 12);
 				@include suffix(2 of 12);
+				height: auto;
 				@include rhythm(0, .25, .25, 0, 15px); // chrome bug ??
 			}
-			
+			@include breakpoint($l-break-xlarge) {
+				@include rhythm(0,1,1,0,15px);
+				padding-right: 0;
+			}
 		}
+		// All of this for ensuring vertical align when text wraps on mobile
+		.tagline-wrap {
+		    display: table;
+		    height: 4.5em;
+		    @include breakpoint($l-break-medium) {
+		    	height: auto;
+		    }
+		}
+			.tagline-wrap p {
+			    margin: 0;
+			    display: table-cell;
+			    vertical-align: middle;
+			}
 
 	.nav-main {
 		background-color: white;
@@ -48,9 +83,14 @@
 			// @include pre(2 of 12);
 			@include suffix(2 of 12);
 			margin-top: - rhythm(1.5, 15px);
-			
-			.menu >li > a {
-				@include rhythm(0, .25, .25, 0, 15px);
+		}
+		@include breakpoint($l-break-xlarge) {
+			width: 100%;
+			margin-top: 0;
+			padding-right: 0;
+			float: none;
+			.menu {
+				@include container($l-break-xlarge);
 			}
 		}
 	}
@@ -58,6 +98,10 @@
 
 .wrap-main {
 	@include leader(1);
+
+	@extend %ore-p__sides--small;
+	@extend %ore-p__sides--small2;
+	@extend %ore-p__sides--medium--0;
 }
 
 

@@ -456,7 +456,7 @@ html {
   clear: both;
   overflow: hidden;
 }
-@media (min-width: 48em) {
+@media (min-width: 51.5em) {
   /* line 23, ore/ore_extends.scss */
   .menu {
     clear: none;
@@ -520,7 +520,27 @@ p {
   margin-bottom: 1.46667em;
 }
 
-/* line 129, ore/ore_extends.scss */
+/* line 127, ore/ore_extends.scss */
+.wrap-main {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+@media (min-width: 32em) {
+  /* line 132, ore/ore_extends.scss */
+  .wrap-main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (min-width: 51.5em) {
+  /* line 142, ore/ore_extends.scss */
+  .wrap-main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 172, ore/ore_extends.scss */
 .img-text__title--img-grid, .img-grid__img {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -528,7 +548,12 @@ p {
   transition: all 0.5s;
 }
 
-/* line 155, ore/ore_extends.scss */
+/* line 194, ore/ore_extends.scss */
+.img-text__container {
+  display: block;
+}
+
+/* line 199, ore/ore_extends.scss */
 [id="toggle-nav"] {
   position: absolute;
   height: 1px;
@@ -537,7 +562,7 @@ p {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 163, ore/ore_extends.scss */
+/* line 207, ore/ore_extends.scss */
 .site-logo, [for="toggle-nav"] {
   text-align: center;
 }
@@ -554,7 +579,13 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-/* line 23, sass/core/_base.scss */
+/* line 17, sass/core/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, sass/core/_base.scss */
 h1, .h1 {
   font-size: 1.8em;
   line-height: 1.62963em;
@@ -562,7 +593,7 @@ h1, .h1 {
   margin-bottom: 0.81481em;
 }
 
-/* line 28, sass/core/_base.scss */
+/* line 33, sass/core/_base.scss */
 h2, .h2 {
   font-size: 1.4em;
   line-height: 2.09524em;
@@ -570,7 +601,7 @@ h2, .h2 {
   margin-bottom: 1.04762em;
 }
 
-/* line 33, sass/core/_base.scss */
+/* line 38, sass/core/_base.scss */
 h3, .h3 {
   font-size: 1.17em;
   line-height: 1.25356em;
@@ -578,7 +609,7 @@ h3, .h3 {
   margin-bottom: 1.25356em;
 }
 
-/* line 38, sass/core/_base.scss */
+/* line 43, sass/core/_base.scss */
 h4, .h4 {
   font-size: 1em;
   line-height: 1.46667em;
@@ -586,7 +617,7 @@ h4, .h4 {
   margin-bottom: 1.46667em;
 }
 
-/* line 43, sass/core/_base.scss */
+/* line 48, sass/core/_base.scss */
 h5, .h5 {
   font-size: 0.83em;
   line-height: 1.76707em;
@@ -594,7 +625,7 @@ h5, .h5 {
   margin-bottom: 1.76707em;
 }
 
-/* line 48, sass/core/_base.scss */
+/* line 53, sass/core/_base.scss */
 h6, .h6 {
   font-size: 0.67em;
   line-height: 2.18905em;
@@ -602,52 +633,52 @@ h6, .h6 {
   margin-bottom: 2.18905em;
 }
 
-/* line 55, sass/core/_base.scss */
+/* line 60, sass/core/_base.scss */
 .menu > li > a {
   color: #fff;
 }
 
-/* line 61, sass/core/_base.scss */
+/* line 66, sass/core/_base.scss */
 .img-container {
   overflow: hidden;
 }
 
-/* line 65, sass/core/_base.scss */
+/* line 70, sass/core/_base.scss */
 .center {
   text-align: center;
 }
 
-/* line 67, sass/core/_base.scss */
+/* line 72, sass/core/_base.scss */
 .left {
   text-align: left;
 }
 
-/* line 69, sass/core/_base.scss */
+/* line 74, sass/core/_base.scss */
 .right {
   text-align: right;
 }
 
-/* line 72, sass/core/_base.scss */
+/* line 77, sass/core/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 4, sass/core/_content.scss */
+/* line 5, sass/core/_content.scss */
 .site-logo {
   background-color: white;
 }
-/* line 7, sass/core/_content.scss */
+/* line 8, sass/core/_content.scss */
 .site-logo a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 12, sass/core/_content.scss */
+/* line 13, sass/core/_content.scss */
 .site-tagline {
-  background-color: #fff;
+  background-color: white;
 }
 
-/* line 17, sass/core/_content.scss */
+/* line 18, sass/core/_content.scss */
 .nav-list {
   padding: 0;
 }
@@ -675,22 +706,80 @@ h6, .h6 {
   clear: both;
 }
 
-/* line 8, sass/core/_layout.scss */
+@media (min-width: 85em) {
+  /* line 6, sass/core/_layout.scss */
+  .wrap-main {
+    width: 85em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-size: 7.08333em, 100% 22px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
+  .wrap-main::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 13, sass/core/_layout.scss */
+.site-header {
+  padding-top: 1px;
+  background-color: white;
+}
+@media (min-width: 85em) {
+  /* line 13, sass/core/_layout.scss */
+  .site-header {
+    background: 0;
+    background-color: white;
+  }
+}
+
+/* line 22, sass/core/_layout.scss */
 .site-banner {
   width: 83.05085%;
   float: left;
   margin-right: 1.69492%;
-  background-color: white;
 }
-@media (min-width: 48em) {
-  /* line 8, sass/core/_layout.scss */
+@media (min-width: 51.5em) {
+  /* line 22, sass/core/_layout.scss */
   .site-banner {
     width: 100%;
     float: left;
   }
 }
+@media (min-width: 85em) {
+  /* line 22, sass/core/_layout.scss */
+  .site-banner {
+    float: none;
+    width: 85em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+    background-size: 7.08333em, 100% 22px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
+  .site-banner::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
 
-/* line 16, sass/core/_layout.scss */
+/* line 34, sass/core/_layout.scss */
 .site-logo {
   width: 28.57143%;
   float: left;
@@ -698,48 +787,75 @@ h6, .h6 {
   font-size: 3em;
   line-height: 1.46667em;
 }
-@media (min-width: 48em) {
-  /* line 16, sass/core/_layout.scss */
+@media (min-width: 51.5em) {
+  /* line 34, sass/core/_layout.scss */
   .site-logo {
-    width: 15.25424%;
+    width: 16.94915%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 1.66667%;
+    margin-right: 0;
     font-size: 4em;
     line-height: 1.1em;
   }
 }
 
-/* line 27, sass/core/_layout.scss */
+/* line 46, sass/core/_layout.scss */
 .site-tagline {
-  display: block;
   width: 69.38776%;
   float: right;
   font-size: 1em;
   line-height: 1.46667em;
-  margin-top: 0em;
-  padding-top: 0.73333em;
-  padding-bottom: 0.73333em;
-  margin-bottom: 0em;
+  height: 4.5em;
 }
-@media (min-width: 48em) {
-  /* line 27, sass/core/_layout.scss */
+@media (min-width: 51.5em) {
+  /* line 46, sass/core/_layout.scss */
   .site-tagline {
     width: 83.05085%;
     float: right;
     padding-right: 16.94915%;
+    height: auto;
     margin-top: 0em;
     padding-top: 0.36667em;
     padding-bottom: 0.36667em;
     margin-bottom: 0em;
   }
 }
+@media (min-width: 85em) {
+  /* line 46, sass/core/_layout.scss */
+  .site-tagline {
+    margin-top: 0em;
+    padding-top: 1.46667em;
+    padding-bottom: 1.46667em;
+    margin-bottom: 0em;
+    padding-right: 0;
+  }
+}
 
-/* line 42, sass/core/_layout.scss */
+/* line 64, sass/core/_layout.scss */
+.tagline-wrap {
+  display: table;
+  height: 4.5em;
+}
+@media (min-width: 51.5em) {
+  /* line 64, sass/core/_layout.scss */
+  .tagline-wrap {
+    height: auto;
+  }
+}
+
+/* line 71, sass/core/_layout.scss */
+.tagline-wrap p {
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 77, sass/core/_layout.scss */
 .nav-main {
   background-color: white;
 }
-@media (min-width: 48em) {
-  /* line 42, sass/core/_layout.scss */
+@media (min-width: 51.5em) {
+  /* line 77, sass/core/_layout.scss */
   .nav-main {
     background-color: black;
     width: 83.05085%;
@@ -747,22 +863,36 @@ h6, .h6 {
     padding-right: 16.94915%;
     margin-top: -2.2em;
   }
-  /* line 52, sass/core/_layout.scss */
-  .nav-main .menu > li > a {
-    margin-top: 0em;
-    padding-top: 0.36667em;
-    padding-bottom: 0.36667em;
-    margin-bottom: 0em;
+}
+@media (min-width: 85em) {
+  /* line 77, sass/core/_layout.scss */
+  .nav-main {
+    width: 100%;
+    margin-top: 0;
+    padding-right: 0;
+    float: none;
+  }
+  /* line 92, sass/core/_layout.scss */
+  .nav-main .menu {
+    max-width: 85em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
+  .nav-main .menu::after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 }
 
-/* line 59, sass/core/_layout.scss */
+/* line 99, sass/core/_layout.scss */
 .wrap-main {
   margin-top: 1.46667em;
 }
 
-@media (min-width: 48em) {
-  /* line 64, sass/core/_layout.scss */
+@media (min-width: 51.5em) {
+  /* line 108, sass/core/_layout.scss */
   .content--left {
     margin-left: 16.94915%;
     width: 49.15254%;
@@ -771,8 +901,8 @@ h6, .h6 {
     margin-right: 0;
   }
 }
-@media (min-width: 65em) {
-  /* line 64, sass/core/_layout.scss */
+@media (min-width: 69em) {
+  /* line 108, sass/core/_layout.scss */
   .content--left {
     margin-left: 16.94915%;
     width: 40.67797%;
@@ -782,14 +912,14 @@ h6, .h6 {
   }
 }
 
-/* line 79, sass/core/_layout.scss */
+/* line 123, sass/core/_layout.scss */
 .sidebar {
   width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
 }
-@media (min-width: 48em) {
-  /* line 79, sass/core/_layout.scss */
+@media (min-width: 51.5em) {
+  /* line 123, sass/core/_layout.scss */
   .sidebar {
     width: 16.94915%;
     float: left;
@@ -797,8 +927,8 @@ h6, .h6 {
     padding-left: 22px;
   }
 }
-@media (min-width: 65em) {
-  /* line 79, sass/core/_layout.scss */
+@media (min-width: 69em) {
+  /* line 123, sass/core/_layout.scss */
   .sidebar {
     width: 25.42373%;
     float: left;
@@ -823,18 +953,18 @@ h6, .h6 {
   position: relative;
 }
 
-/* line 17, sass/modules/_img-text.scss */
+/* line 18, sass/modules/_img-text.scss */
 .img-text__title {
   position: absolute;
 }
 
-/* line 21, sass/modules/_img-text.scss */
+/* line 22, sass/modules/_img-text.scss */
 .img-text__title--product {
   top: 200px;
   left: 0;
 }
 
-/* line 28, sass/modules/_img-text.scss */
+/* line 29, sass/modules/_img-text.scss */
 .img-text__bg {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5em;
@@ -850,55 +980,54 @@ h6, .h6 {
   padding-bottom: 1.46667em;
   margin-bottom: 0em;
 }
-@media (min-width: 48em) {
+@media (min-width: 51.5em) {
   /* line 5, sass/modules/_navigation.scss */
   [for="toggle-nav"] {
     display: none;
   }
 }
 
-/* line 24, sass/modules/_navigation.scss */
+/* line 22, sass/modules/_navigation.scss */
 .menu {
   list-style-type: none;
   text-align: left;
   background-color: black;
   padding-left: 0;
 }
-/* line 30, sass/modules/_navigation.scss */
-.menu li {
-  display: block;
-  padding-left: 25.42373%;
-}
-/* line 34, sass/modules/_navigation.scss */
+/* line 28, sass/modules/_navigation.scss */
 .menu li > a {
   display: block;
   text-decoration: none;
+  padding-left: 12.60504%;
+  margin-top: 0em;
+  padding-top: 0.36667em;
+  padding-bottom: 0.36667em;
+  margin-bottom: 0em;
 }
-/* line 37, sass/modules/_navigation.scss */
+/* line 33, sass/modules/_navigation.scss */
 .menu li > a:hover {
   background-color: #e8e3e3;
   color: black;
 }
 
-@media (min-width: 48em) {
-  /* line 45, sass/modules/_navigation.scss */
+@media (min-width: 51.5em) {
+  /* line 41, sass/modules/_navigation.scss */
   .menu {
     max-height: 3em;
     margin: 0;
     text-align: right;
   }
-  /* line 49, sass/modules/_navigation.scss */
+  /* line 45, sass/modules/_navigation.scss */
   .menu li {
     display: inline-block;
     margin-left: 0.5em;
     padding-left: 0.5em;
   }
 
-  /* line 55, sass/modules/_navigation.scss */
+  /* line 51, sass/modules/_navigation.scss */
   .menu li > a {
     padding-left: 0.5em;
     padding-right: 0.5em;
-    border-bottom: #e8e3e3;
   }
 }
 /* line 4, sass/modules/_product.scss */
@@ -914,8 +1043,44 @@ h6, .h6 {
 
 /* line 6, sass/modules/_sidebar.scss */
 .sidebar__list {
-  margin-top: 47.36842%;
   line-height: 0;
+}
+
+@media (min-width: 51.5em) {
+  /* line 11, sass/modules/_sidebar.scss */
+  .sidebar__item:first-child:before {
+    content: "";
+    display: block;
+    margin-top: 133%;
+  }
+}
+@media (min-width: 69em) {
+  /* line 11, sass/modules/_sidebar.scss */
+  .sidebar__item:first-child:before {
+    margin-top: 100%;
+  }
+}
+
+/* line 1, sass/modules/_slider.scss */
+.slider--product {
+  position: relative;
+  overflow: auto;
+}
+
+/* line 5, sass/modules/_slider.scss */
+.slider--product li {
+  list-style: none;
+}
+
+/* line 9, sass/modules/_slider.scss */
+.slider--product ul li {
+  float: left;
+}
+
+/* line 13, sass/modules/_slider.scss */
+.slider--product img {
+  width: 100%;
+  height: auto;
 }
 
 /* line 5, sass/modules/_grid.scss */
@@ -927,7 +1092,7 @@ h6, .h6 {
   float: left;
 }
 
-@media (min-width: 65em) {
+@media (min-width: 69em) {
   /* line 13, sass/modules/_grid.scss */
   .img-grid__itm:nth-child(odd) {
     width: 49.87531%;
@@ -957,3 +1122,6 @@ h6, .h6 {
   max-width: 100%;
   opacity: 0.5;
 }
+
+/* @import
+	"3rd/jquery.bxslider"; */

@@ -14,6 +14,11 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     @extend %ore-m__topbottom--base !optional;
 }

@@ -1,0 +1,16 @@
+.slider--product {
+	position: relative;
+	overflow: auto;
+}
+    .slider--product li {
+    	list-style: none;
+
+    }
+        .slider--product ul li {
+        	float: left;
+        }
+
+        .slider--product img {
+        	width: 100%;
+        	height: auto;
+        }

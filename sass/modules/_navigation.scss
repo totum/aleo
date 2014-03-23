@@ -19,27 +19,23 @@
 		@extend %ore-n--toggle__checked;
 	}
 
-
-
-.menu {
-	@extend %ore-n--toggle__list;
-	list-style-type: none;
-	text-align: left;
-	background-color: black;
-	padding-left: 0;
-	li {
-		display: block;
-		@include prefix(3 of 12);
+	.menu {
+		@extend %ore-n--toggle__list;
+		list-style-type: none;
+		text-align: left;
+		background-color: black;
+		padding-left: 0;
+		li > a {
+			display: block;
+			text-decoration: none;
+			@include prefix(3 of 24);
+			@include rhythm(0, .25, .25, 0, 15px);
+			&:hover {
+				background-color: hsl(0,10%,90%);
+				color: black;
+			}	
+		}
 	}
-	li > a {
-		display: block;
-		text-decoration: none;
-		&:hover {
-			background-color: hsl(0,10%,90%);
-			color: black;
-		}	
-	}
-}
 
 @include breakpoint($l-break-medium) {
 	.menu {
@@ -55,7 +51,7 @@
 	.menu li > a {
 		padding-left: 0.5em;
 		padding-right: 0.5em;
-		border-bottom: hsl(0,10%,90%);
+		// border-bottom: hsl(0,10%,90%);
 //border-bottom: 4px solid hsl(0,10%,90%);
 	}
 }

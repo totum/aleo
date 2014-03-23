@@ -4,11 +4,23 @@
 }
 
 .sidebar__list {
-	margin-top: span(2);
+	//margin-top: span(2);
 	line-height: 0; // to avoid weird bottom margin
-
 }
 
-
+.sidebar__item:first-child:before {
+	@include breakpoint($l-break-medium) {
+		content: "";
+		display: block;
+		// Margin top to give space AND
+		// have sidebar blocks ~level with base of featured.
+		// Ratios featured/side on medium: 6 / 2
+		margin-top: 133%;
+	}
+	@include breakpoint($l-break-large) {
+		// Ratios featured/side on medium: 5 / 3
+		margin-top: 100%; //Based on width width
+	}
+}
 // set sidebar as container! for grid inside.
 // maybe define in grid...

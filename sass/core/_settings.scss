@@ -7,7 +7,6 @@
 // 
 // *************************************
 
-
 // -------------------------------------
 //   #Font sizing
 // -------------------------------------
@@ -38,19 +37,23 @@ $s-gutter-ratio: 1/4;
 $s-gutter-position: inside;
 
 // ----- Xlarge vars ----- //
-$s-container-width-xlarge: 80em;
+$s-column-width-xlarge: (85em / $s-columns) * 0.8; // 85em (desired width) / 12 (column number) / 0.8 (gutter ratio) = 
+$s-container-width-xlarge: auto; // Adjust using column width instead. Refer to Susy docs
 $s-grid-type-xlarge: static;
 
 // ----- Breakpoints ----- //
 // ----- 	WARNING!
 // 			Don't change var names
 // 						-- //
-$l-break-medium: 48em; // 768px
-$l-break-large: 65em; // 1040px
+$l-break-small2: 32em; // 768px
+$l-break-medium: 51.5em; // 773px
+$l-break-large: 69em; // 1035px
 $l-break-xlarge: 85em; // 1360px
+
 
 // ----- Container padding ----- //
 $l-padding-small: 0.5em;
+$l-padding-small2: 1em;
 $l-padding-medium: 2em;
 $l-padding-large: 3em;
 $l-padding-xlarge: 0;
@@ -58,13 +61,10 @@ $l-padding-xlarge: 0;
 // ----- Standard container ----- //
 $s-container: (
 	columns: $s-columns,
-	gutters: $s-gutter-ratio, //$gutter-width / $column-width,
+	gutters: $s-gutter-ratio,
 	gutter-position: $s-gutter-position,
-	//column-width
 	container: $s-container-width,
 	math: $s-grid-type,
-	//flow: if($from-direction == right, rtl, ltr),
-	//last-flow: if($omega-float == $from-direction, from, to),
 	debug: (
     	image: $s-grid-bg,
     ),
@@ -72,14 +72,15 @@ $s-container: (
 );
 
 $s-container-xlarge: (
-	// columns: $s-columns,
-	// gutters: $s-gutter-ratio, //$gutter-width / $column-width,
-	container: $s-container-width-xlarge,
+	columns: $s-columns,
+	column-width: $s-column-width-xlarge,
+	gutters: $s-gutter-ratio,
+	gutter-position: $s-gutter-position,
 	math: $s-grid-type-xlarge,
-	// debug: (
-    	// image: $s-grid-bg,
-    // ),
-	// global-box-sizing: $s-boxsizing,
+	debug: (
+    	image: $s-grid-bg,
+    ),
+    global-box-sizing: $s-boxsizing,
 );
 
 // -------------------------------------

@@ -29,7 +29,6 @@ Version: 0.1a
 	"../ore/ore_extends",
 	"core/helpers",
 	"core/base",
-	"core/states",
 	"core/content",
 	"core/layout",
 	"core/print";
@@ -44,6 +43,14 @@ Version: 0.1a
 	"modules/img-text",
 	"modules/navigation",
 	"modules/product",
-	"modules/sidebar";
+	"modules/sidebar",
+	"modules/slider";
 
 @import "modules/grid";
+
+
+// -------------------------------------
+//	3rd party plugins
+// -------------------------------------
+/* @import
+	"3rd/jquery.bxslider"; */

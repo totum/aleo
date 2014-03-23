@@ -24,7 +24,7 @@
 						$aside_post_id = get_the_ID();
 						if ( $aside_post_id == $main_post_id ) : continue;						
 						else : ?>
-							<li class="sidebar__item  img-grid__itm  img-text__container  img-grid__container">
+							<li class="sidebar__item  img-grid__itm">
 								<?php
 								// Checks for post selected image. Inserts if true.
 								if( has_post_thumbnail() ) {
@@ -33,7 +33,7 @@
 									//$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-large', true );
 									//$thumb_large_url = $thumb_large['0'];
 								?>
-								<a href="<?php the_permalink() ?>">
+								<a href="<?php the_permalink() ?>" class="img-text__container  img-grid__container">
 									<img class="sidebar__item__img  img-grid__img  img-text__img" src="<?php echo $thumb_url; ?>" />
 									<h2 class="sidebar__item__title  h5  img-text__title  img-text__title--img-grid"><span class="img-text__bg"><?php the_title(); ?></span></h2>
 								</a>
@@ -45,6 +45,7 @@
 					<?php endwhile; ?>
 					</ul>
 				<?php endif; ?>
+
 
 			<?php wp_reset_postdata(); ?>
 
