@@ -12,6 +12,7 @@
 // -------------------------------------
 $base-font-size: 15px;
 $base-line-height: 22px;
+$rhythm-unit: 'rem';
 @include establish-baseline;
 
 $h1-font-size: 1.5    * $base-font-size;
@@ -26,7 +27,7 @@ $h6-font-size: 0.67 * $base-font-size;
 // 		s-* for susy specific
 // 		l-* for vars passed to layout
 // -------------------------------------
-$s-grid-bg: hide; // Show/Hide - For showing the susy and rhytm background
+$s-grid-bg: show; // Show/Hide - For showing the susy and rhytm background
 
 // ----- Generic vars ----- //
 $s-boxsizing: border-box;
@@ -45,15 +46,15 @@ $s-grid-type-xlarge: static;
 // ----- 	WARNING!
 // 			Don't change var names
 // 						-- //
-$l-break-small2: 32em; // 768px
-$l-break-medium: 51.5em; // 773px
-$l-break-large: 69em; // 1035px
-$l-break-xlarge: 85em; // 1360px
+$l-break-small2: 480px; //32em; // 480px
+$l-break-medium: 768px; //51.5em; // 773px
+$l-break-large: 1025px; // 1035px
+$l-break-xlarge: 1360px; // 1360px
 
 
 // ----- Container padding ----- //
-$l-padding-small: 0.5em;
-$l-padding-small2: 1em;
+$l-padding-small: 0.5rem;
+$l-padding-small2: 1rem;
 $l-padding-medium: 2em;
 $l-padding-large: 3em;
 $l-padding-xlarge: 0;
@@ -91,4 +92,4 @@ $color-accent: red;
 $color-accent2: purple;
 
 $color-caption: #fff;
-$color-caption-bg: rgba(0, 0, 0, 0.8);
+$color-caption-bg: rgba(0, 0, 0, 0.7);

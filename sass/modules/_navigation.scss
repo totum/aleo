@@ -4,10 +4,25 @@
 
 	[for="toggle-nav"] {
 		@include span(last 2 of 12);
-		@include rhythm(0, 1, 1, 0, 15px);
-		@extend %ore-l-center;
+		@extend %ore-l-right;
+		@include adjust-font-size-to(1.5rem);
+		@include padding-leader(0.5);
+		@include padding-trailer(0.5);
+		text-rendering: geometricPrecision; // Pretty rendering of unicode cross-device
+		font-weight: strong;
+
+		padding-right: $l-padding-small;
+		@include breakpoint($l-break-small2) {
+			@include adjust-font-size-to(2rem);
+			padding-right: $l-padding-small2;
+		}
+
 		@include breakpoint($l-break-medium) {
 			display: none;
+		}
+		&:after {
+			 // Menu icon, unicode
+			
 		}
 	}
 

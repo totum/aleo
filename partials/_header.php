@@ -15,7 +15,7 @@
 		</header>
 		<nav role="navigation" class="nav-main  nav">
 			<input type="checkbox" id="toggle-nav" aria-hidden="true">
-			<label for="toggle-nav" data-icon="menu" aria-hidden="true">Menu</label>
+			<label for="toggle-nav" data-icon="menu" aria-hidden="true" onclick>&#9776;</label>
 			<?php wp_nav_menu( array( 'container' => false ) ); ?>
 		</nav>
 	</div>

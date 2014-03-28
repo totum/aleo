@@ -16,8 +16,8 @@
 
 			$wp_query = new WP_Query( $args );
 				if ( $wp_query->have_posts() ): ?>
-					<h2 class="h3  img-text__title">
-						<span class="sidebar__title">More <?php echo $cat_name ?></span>
+					<h2 class="h3  sidebar__title">
+						<span class="sidebar__title__span">More <?php echo $cat_name ?></span>
 					</h2>
 
 					<ul class="sidebar__list  grid--img  nav-list">
@@ -46,7 +46,7 @@
 
 									<span class="sidebar__item__img  img-grid__img  img-text__img" data-picture data-alt="<?php echo $alt_feat ?>" title="<?php echo $title_feat; ?>">
 
-										<span data-src="<?php echo $feat_image['sizes'][ 'thumbnail' ]?>"></span>
+										<span data-src="<?php echo $feat_image['sizes'][ 'thumb2' ]?>"></span>
 								        <span data-src="<?php echo $feat_image['sizes'][ 'small' ]?>" 	data-media="(min-device-pixel-ratio: 2.0)"></span>
 								        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
 								        <noscript>

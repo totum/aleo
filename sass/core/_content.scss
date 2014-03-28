@@ -2,17 +2,53 @@
 //   Content
 // -------------------------------------
 
-.site-logo {
+.site-header {
+	padding-top: 1px; // Avoid margin collapsing in FF
 	background-color: white;
-	@extend %ore-l-center;
-	a {
-		color: #000;
-		text-decoration: none;
+	@include breakpoint($l-break-xlarge) {
+		background: 0; // Reset grid background on dev
+		background-color: white;
 	}
 }
-.site-tagline {
-	background-color: white;
-}
+
+	.site-logo {
+		@include adjust-font-size-to(2rem);
+		@include leader(0.5);
+		@include trailer(0.5);
+		
+		@extend %ore-l-left;
+
+		background-color: white;
+		padding-left: $l-padding-small;
+		
+		@include breakpoint($l-break-small2) {
+			@include adjust-font-size-to(2.5rem);
+			padding-left: $l-padding-small2;
+		}
+					
+		@include breakpoint($l-break-medium) {
+			@include adjust-font-size-to(4rem);
+			@include leader(0);
+			@include trailer(0);
+			padding-left: 0;
+			text-align: center;
+		}
+
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+
+	.site-tagline {
+		background-color: white;
+	}
+		.tagline-wrap p {
+			@include adjust-font-size-to(0.9rem);
+			@include breakpoint($l-break-small2) {
+				@include adjust-font-size-to(1rem);
+			}
+		}
 
 
 .nav-list {

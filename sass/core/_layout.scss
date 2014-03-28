@@ -9,15 +9,7 @@
 	}
 }
 
-
-.site-header {
-	padding-top: 1px; // Avoid margin collapsing in FF
-	background-color: white;
-	@include breakpoint($l-break-xlarge) {
-		background: 0; // Reset grid background on dev
-		background-color: white;
-	}
-}
+.site-header {}
 
 	.site-banner {
 		@include span(first 10 of 12 nest);
@@ -33,13 +25,11 @@
 
 		.site-logo {
 			@include span(first 3 of 10);
-			@include adjust-font-size-to(3em);
 			@extend %ore-m--0;
 
 			@include breakpoint($l-break-medium) {
 				@include span(first 2 of 12 wide);
 				margin-right: 0; // Allow tagline to float up
-				@include adjust-font-size-to(4em);
 			}
 		}
 
@@ -123,7 +113,7 @@
 }
 
 .sidebar {
-	@include span (8 of 12 at 3 nest);
+	@include span(12 of 12 nest);
 	@include breakpoint($l-break-medium) {
 		@include span(2 of 12 at 8 wide nest);
 		padding-left: $base-line-height; // Whitespace same as 1 line

@@ -3,10 +3,17 @@
 // -------------------------------------
 
 .img-grid__itm {
-	overflow: hidden;
-	display: block;
-	padding-bottom: 0.3em;
-	@include span(2 of 2);
+
+	@include gallery(6 of 12);
+	@include breakpoint($l-break-small2) {
+		@include gallery(4 of 12);
+	}
+	@include breakpoint($l-break-medium) {
+		overflow: hidden;
+		display: block;
+		padding-bottom: 0.3em;
+		@include span(2 of 2);
+	}
 }
 
 @include breakpoint($l-break-large) {
@@ -36,6 +43,6 @@
 	@extend %display-block;
 	max-height: 100%;
 	max-width: 100%;
-	opacity: 0.7;
+	opacity: 0.3;
 	@extend %ore-t__all--050;
 }

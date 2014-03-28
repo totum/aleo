@@ -1,16 +1,38 @@
+.sidebar:hover .img-text__title,
+.sidebar:hover .img-text__img img {
+	opacity: 0.5;
+}
+.sidebar:hover .sidebar__title__span {
+	background-color: rgba(255,255,255,1);
+	color: #000;
+}
+
 .sidebar__item:hover .img-text__title,
-.sidebar__item:hover .img-text__img {
+.sidebar__item:hover .img-text__img img {
 	opacity: 1;
 }
 
 .sidebar__title {
-	background-color: rgba(255,255,255,0.8);
+	@include breakpoint($l-break-medium) {
+		position: absolute;
+	}
+
+}
+
+.sidebar__title__span {
+	background-color: rgba(255,255,255,0.5);
 	color: $color-caption-bg;
-	padding: 0.5em;
+	white-space: nowrap;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+		@extend %ore-t__all--050;
+	@include rhythm(1,0.7,0.7,1); // Achieve same box size as product title
+
 	font-style: italic;
 }
 
 .sidebar__list {
+	list-style-type: none;
 	//margin-top: span(2);
 	line-height: 0; // to avoid weird bottom margin
 }
@@ -26,7 +48,7 @@
 		// Margin top to give space AND
 		// have sidebar blocks ~level with base of featured.
 		// Ratios featured/side on medium: 6 / 2
-		margin-top: 120%;
+		margin-top: 130%;
 	}
 	@include breakpoint($l-break-large) {
 		// Ratios featured/side on medium: 5 / 3

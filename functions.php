@@ -3,6 +3,7 @@
 // Post thumbnails
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 80, 80, true ); // Thumbnail. Used in grids, galleries
+add_image_size( 'thumb2', 240, 240, true); // Thumbnail@2 and for small devices
 add_image_size( 'small', 480, 480, true); // Thumbnail@2 and for small devices
 add_image_size( 'medium', 960, 960, true ); // Medium, for small HDPI and regular
 add_image_size( 'large', 1560, 1560, true ); // Large for Medium @2
