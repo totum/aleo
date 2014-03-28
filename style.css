@@ -4,7 +4,20 @@ Theme URI: www.factotum.dk
 Description: Responsive theme for aleo.dk
 Author: Morten Hedelykke Dietz Fuglsang
 Author URI: www.factotum.dk
-Version: 0.1a
+Version: Alpha 0.2
+*/
+/*
+// -------------------------------------
+//		TODO
+// -------------------------------------
+### check if works with height when resizing browser window.
+# where will subnav be on mobile? bottom!
+## fix subnav on mobile.
+# style mobile menu button
+# fix menu on mobile
+# make archive view (rwd view, boxes!)
+### how much css can be abstracted, ~"media object?"
+
 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
@@ -449,7 +462,7 @@ html {
   line-height: 1.46667em;
 }
 
-/* line 23, ore/ore_extends.scss */
+/* line 23, ore/_ore_extends.scss */
 .menu {
   max-height: 0;
   opacity: 1;
@@ -457,13 +470,13 @@ html {
   overflow: hidden;
 }
 @media (min-width: 51.5em) {
-  /* line 23, ore/ore_extends.scss */
+  /* line 23, ore/_ore_extends.scss */
   .menu {
     clear: none;
   }
 }
 
-/* line 36, ore/ore_extends.scss */
+/* line 36, ore/_ore_extends.scss */
 [id="toggle-nav"]:checked ~ .menu {
   max-height: 30em;
 }
@@ -509,51 +522,51 @@ html {
 %block-1b-half {
     
 }*/
-/* line 110, ore/ore_extends.scss */
+/* line 110, ore/_ore_extends.scss */
 .site-logo {
   margin: 0;
 }
 
-/* line 119, ore/ore_extends.scss */
+/* line 119, ore/_ore_extends.scss */
 p {
   margin-top: 1.46667em;
   margin-bottom: 1.46667em;
 }
 
-/* line 127, ore/ore_extends.scss */
+/* line 127, ore/_ore_extends.scss */
 .wrap-main {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
 @media (min-width: 32em) {
-  /* line 132, ore/ore_extends.scss */
+  /* line 132, ore/_ore_extends.scss */
   .wrap-main {
     padding-left: 1em;
     padding-right: 1em;
   }
 }
 @media (min-width: 51.5em) {
-  /* line 142, ore/ore_extends.scss */
+  /* line 142, ore/_ore_extends.scss */
   .wrap-main {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 172, ore/ore_extends.scss */
-.img-text__title--img-grid, .img-grid__img {
+/* line 172, ore/_ore_extends.scss */
+.img-text__title--img-grid, .img-grid__img img {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-/* line 194, ore/ore_extends.scss */
-.img-text__container {
+/* line 194, ore/_ore_extends.scss */
+.img-text__container, .img-grid__img img {
   display: block;
 }
 
-/* line 199, ore/ore_extends.scss */
+/* line 199, ore/_ore_extends.scss */
 [id="toggle-nav"] {
   position: absolute;
   height: 1px;
@@ -562,7 +575,7 @@ p {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 207, ore/ore_extends.scss */
+/* line 207, ore/_ore_extends.scss */
 .site-logo, [for="toggle-nav"] {
   text-align: center;
 }
@@ -587,26 +600,26 @@ ul {
 
 /* line 28, sass/core/_base.scss */
 h1, .h1 {
-  font-size: 1.8em;
-  line-height: 1.62963em;
-  margin-top: 0.81481em;
-  margin-bottom: 0.81481em;
+  font-size: 1.5em;
+  line-height: 1.95556em;
+  margin-top: 0.97778em;
+  margin-bottom: 0.97778em;
 }
 
 /* line 33, sass/core/_base.scss */
 h2, .h2 {
-  font-size: 1.4em;
-  line-height: 2.09524em;
-  margin-top: 1.04762em;
-  margin-bottom: 1.04762em;
+  font-size: 1.25em;
+  line-height: 2.34667em;
+  margin-top: 1.17333em;
+  margin-bottom: 1.17333em;
 }
 
 /* line 38, sass/core/_base.scss */
 h3, .h3 {
-  font-size: 1.17em;
-  line-height: 1.25356em;
-  margin-top: 1.25356em;
-  margin-bottom: 1.25356em;
+  font-size: 1.1em;
+  line-height: 1.33333em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /* line 43, sass/core/_base.scss */
@@ -663,6 +676,16 @@ h6, .h6 {
   clear: both;
 }
 
+/* line 81, sass/core/_base.scss */
+.pos-relative {
+  position: relative;
+}
+
+/* line 85, sass/core/_base.scss */
+.pos-absolute {
+  position: absolute;
+}
+
 /* line 5, sass/core/_content.scss */
 .site-logo {
   background-color: white;
@@ -689,14 +712,6 @@ h6, .h6 {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-size: 8.33333%, 100% 22px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
 }
 /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
 .site-header::after,
@@ -712,14 +727,6 @@ h6, .h6 {
     width: 85em;
     margin-left: auto;
     margin-right: auto;
-    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-size: 7.08333em, 100% 22px;
-    background-origin: content-box, border-box;
-    background-clip: content-box, border-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
   .wrap-main::after {
@@ -762,14 +769,6 @@ h6, .h6 {
     width: 85em;
     margin-left: auto;
     margin-right: auto;
-    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-size: 7.08333em, 100% 22px;
-    background-origin: content-box, border-box;
-    background-clip: content-box, border-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
   .site-banner::after {
@@ -890,9 +889,15 @@ h6, .h6 {
 .wrap-main {
   margin-top: 1.46667em;
 }
+@media (min-width: 51.5em) {
+  /* line 99, sass/core/_layout.scss */
+  .wrap-main {
+    margin-top: 2.2em;
+  }
+}
 
 @media (min-width: 51.5em) {
-  /* line 108, sass/core/_layout.scss */
+  /* line 110, sass/core/_layout.scss */
   .content--left {
     margin-left: 16.94915%;
     width: 49.15254%;
@@ -902,7 +907,7 @@ h6, .h6 {
   }
 }
 @media (min-width: 69em) {
-  /* line 108, sass/core/_layout.scss */
+  /* line 110, sass/core/_layout.scss */
   .content--left {
     margin-left: 16.94915%;
     width: 40.67797%;
@@ -912,14 +917,14 @@ h6, .h6 {
   }
 }
 
-/* line 123, sass/core/_layout.scss */
+/* line 125, sass/core/_layout.scss */
 .sidebar {
   width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
 }
 @media (min-width: 51.5em) {
-  /* line 123, sass/core/_layout.scss */
+  /* line 125, sass/core/_layout.scss */
   .sidebar {
     width: 16.94915%;
     float: left;
@@ -928,7 +933,7 @@ h6, .h6 {
   }
 }
 @media (min-width: 69em) {
-  /* line 123, sass/core/_layout.scss */
+  /* line 125, sass/core/_layout.scss */
   .sidebar {
     width: 25.42373%;
     float: left;
@@ -958,13 +963,13 @@ h6, .h6 {
   position: absolute;
 }
 
-/* line 22, sass/modules/_img-text.scss */
+/* line 21, sass/modules/_img-text.scss */
 .img-text__title--product {
-  top: 200px;
+  top: 0;
   left: 0;
 }
 
-/* line 29, sass/modules/_img-text.scss */
+/* line 28, sass/modules/_img-text.scss */
 .img-text__bg {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5em;
@@ -1030,11 +1035,13 @@ h6, .h6 {
     padding-right: 0.5em;
   }
 }
-/* line 4, sass/modules/_product.scss */
-.product__img {
-  width: 100%;
-}
-
+/* .product__img {
+// make height stay same as div, fluid
+	//position: relative;
+	width: 100%;
+	//padding-bottom: 100%;
+	//@include box-sizing(content-box);
+} */
 /* line 1, sass/modules/_sidebar.scss */
 .sidebar__item:hover .img-text__title,
 .sidebar__item:hover .img-text__img {
@@ -1042,22 +1049,35 @@ h6, .h6 {
 }
 
 /* line 6, sass/modules/_sidebar.scss */
+.sidebar__title {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  font-style: italic;
+}
+
+/* line 13, sass/modules/_sidebar.scss */
 .sidebar__list {
   line-height: 0;
 }
 
+/* line 18, sass/modules/_sidebar.scss */
+.sidebar__item {
+  width: 100%;
+}
+
 @media (min-width: 51.5em) {
-  /* line 11, sass/modules/_sidebar.scss */
+  /* line 22, sass/modules/_sidebar.scss */
   .sidebar__item:first-child:before {
     content: "";
     display: block;
-    margin-top: 133%;
+    margin-top: 120%;
   }
 }
 @media (min-width: 69em) {
-  /* line 11, sass/modules/_sidebar.scss */
+  /* line 22, sass/modules/_sidebar.scss */
   .sidebar__item:first-child:before {
-    margin-top: 100%;
+    margin-top: 105%;
   }
 }
 
@@ -1117,11 +1137,772 @@ h6, .h6 {
   }
 }
 /* line 35, sass/modules/_grid.scss */
-.img-grid__img {
+.img-grid__img img {
   max-height: 100%;
   max-width: 100%;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
-/* @import
-	"3rd/jquery.bxslider"; */
+/*!* Fotorama 4.5.0 | http://fotorama.io/license/ */
+/* line 1, lib/fotorama/_fotorama.scss */
+.fotorama__html, .fotorama__stage__frame, .fotorama__stage__shaft, .fotorama__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 10, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen, .fotorama__img {
+  max-width: 99999px !important;
+  max-height: 99999px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* line 19, lib/fotorama/_fotorama.scss */
+.fotorama__wrap .fotorama__grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+/* line 26, lib/fotorama/_fotorama.scss */
+.fotorama__grabbing * {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+
+/* line 33, lib/fotorama/_fotorama.scss */
+.fotorama__img, .fotorama__spinner {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+}
+
+/* line 38, lib/fotorama/_fotorama.scss */
+.fotorama__img {
+  margin: -50% 0 0 -50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 43, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__arr, .fotorama__wrap--css3 .fotorama__fullscreen-icon, .fotorama__wrap--css3 .fotorama__nav__shaft, .fotorama__wrap--css3 .fotorama__stage__shaft, .fotorama__wrap--css3 .fotorama__thumb-border, .fotorama__wrap--css3 .fotorama__video-close, .fotorama__wrap--css3 .fotorama__video-play {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 47, lib/fotorama/_fotorama.scss */
+.fotorama__nav:after, .fotorama__nav:before, .fotorama__stage:after, .fotorama__stage:before, .fotorama__wrap--css3 .fotorama__caption, .fotorama__wrap--css3 .fotorama__html, .fotorama__wrap--css3 .fotorama__nav, .fotorama__wrap--css3 .fotorama__spinner, .fotorama__wrap--css3 .fotorama__stage, .fotorama__wrap--css3 .fotorama__stage .fotorama__img, .fotorama__wrap--css3 .fotorama__stage__frame {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* line 51, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--video .fotorama__stage, .fotorama__wrap--video .fotorama__stage__frame--video, .fotorama__wrap--video .fotorama__stage__frame--video .fotorama__caption, .fotorama__wrap--video .fotorama__stage__frame--video .fotorama__html, .fotorama__wrap--video .fotorama__stage__frame--video .fotorama__img, .fotorama__wrap--video .fotorama__stage__shaft {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/* line 55, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__nav__shaft, .fotorama__wrap--css3 .fotorama__stage__shaft, .fotorama__wrap--css3 .fotorama__thumb-border {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 0, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.1, 0, 0.25, 1);
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+/* line 63, lib/fotorama/_fotorama.scss */
+.fotorama__arr, .fotorama__fullscreen-icon, .fotorama__no-select, .fotorama__video-close, .fotorama__video-play, .fotorama__wrap {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 69, lib/fotorama/_fotorama.scss */
+.fotorama__select {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* line 75, lib/fotorama/_fotorama.scss */
+.fotorama__nav, .fotorama__nav__frame {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 79, lib/fotorama/_fotorama.scss */
+.fotorama__caption__wrap, .fotorama__nav__frame, .fotorama__nav__shaft {
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 86, lib/fotorama/_fotorama.scss */
+.fotorama__wrap * {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 90, lib/fotorama/_fotorama.scss */
+.fotorama__caption__wrap {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 94, lib/fotorama/_fotorama.scss */
+.fotorama--hidden, .fotorama__load {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+  z-index: -1;
+}
+
+/* line 100, lib/fotorama/_fotorama.scss */
+.fotorama__arr, .fotorama__fullscreen-icon, .fotorama__nav, .fotorama__nav__frame, .fotorama__nav__shaft, .fotorama__stage__frame, .fotorama__stage__shaft, .fotorama__video-close, .fotorama__video-play {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 103, lib/fotorama/_fotorama.scss */
+.fotorama__arr, .fotorama__fullscreen-icon, .fotorama__video-close, .fotorama__video-play {
+  background: url(lib/fotorama/fotorama.png) no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 107, lib/fotorama/_fotorama.scss */
+  .fotorama__arr, .fotorama__fullscreen-icon, .fotorama__video-close, .fotorama__video-play {
+    background: url(lib/fotorama/fotorama@2x.png) no-repeat;
+    background-size: 96px 160px;
+  }
+}
+/* line 112, lib/fotorama/_fotorama.scss */
+.fotorama__thumb {
+  background-color: #7f7f7f;
+  background-color: rgba(127, 127, 127, 0.2);
+}
+
+/* line 116, lib/fotorama/_fotorama.scss */
+.fotorama {
+  min-width: 1px;
+  overflow: hidden;
+}
+
+/* line 120, lib/fotorama/_fotorama.scss */
+.fotorama:not(.fotorama--unobtrusive) > :not(:first-child) {
+  display: none;
+}
+
+/* line 123, lib/fotorama/_fotorama.scss */
+.fullscreen {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: #000;
+}
+
+/* line 133, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  float: none !important;
+  z-index: 2147483647 !important;
+  background: #000;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+}
+
+/* line 146, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen .fotorama__nav, .fotorama--fullscreen .fotorama__stage {
+  background: #000;
+}
+
+/* line 149, lib/fotorama/_fotorama.scss */
+.fotorama__wrap {
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  direction: ltr;
+}
+
+/* line 154, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--rtl .fotorama__stage__frame {
+  direction: rtl;
+}
+
+/* line 157, lib/fotorama/_fotorama.scss */
+.fotorama__nav, .fotorama__stage {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+/* line 162, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--pan-y {
+  -ms-touch-action: pan-y;
+}
+
+/* line 165, lib/fotorama/_fotorama.scss */
+.fotorama__wrap .fotorama__pointer {
+  cursor: pointer;
+}
+
+/* line 168, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--slide .fotorama__stage__frame {
+  opacity: 1 !important;
+}
+
+/* line 171, lib/fotorama/_fotorama.scss */
+.fotorama__stage__frame {
+  overflow: hidden;
+}
+
+/* line 174, lib/fotorama/_fotorama.scss */
+.fotorama__stage__frame.fotorama__active {
+  z-index: 8;
+}
+
+/* line 177, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--fade .fotorama__stage__frame {
+  display: none;
+}
+
+/* line 180, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--fade .fotorama__fade-front, .fotorama__wrap--fade .fotorama__fade-rear, .fotorama__wrap--fade .fotorama__stage__frame.fotorama__active {
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+/* line 185, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--fade .fotorama__fade-front {
+  z-index: 8;
+}
+
+/* line 188, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--fade .fotorama__fade-rear {
+  z-index: 7;
+}
+
+/* line 191, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--fade .fotorama__fade-rear.fotorama__active {
+  z-index: 9;
+}
+
+/* line 194, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--fade .fotorama__stage .fotorama__shadow {
+  display: none;
+}
+
+/* line 197, lib/fotorama/_fotorama.scss */
+.fotorama__img {
+  -ms-filter: "alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  border: none !important;
+}
+
+/* line 203, lib/fotorama/_fotorama.scss */
+.fotorama__error .fotorama__img, .fotorama__loaded .fotorama__img {
+  -ms-filter: "alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+/* line 208, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen .fotorama__loaded--full .fotorama__img, .fotorama__img--full {
+  display: none;
+}
+
+/* line 211, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen .fotorama__loaded--full .fotorama__img--full {
+  display: block;
+}
+
+/* line 214, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--only-active .fotorama__nav, .fotorama__wrap--only-active .fotorama__stage {
+  max-width: 99999px !important;
+}
+
+/* line 217, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--only-active .fotorama__stage__frame {
+  visibility: hidden;
+}
+
+/* line 220, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--only-active .fotorama__stage__frame.fotorama__active {
+  visibility: visible;
+}
+
+/* line 223, lib/fotorama/_fotorama.scss */
+.fotorama__nav {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  display: none;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+/* line 231, lib/fotorama/_fotorama.scss */
+.fotorama__nav__shaft {
+  position: relative;
+  left: 0;
+  top: 0;
+  text-align: left;
+}
+
+/* line 237, lib/fotorama/_fotorama.scss */
+.fotorama__nav__frame {
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 241, lib/fotorama/_fotorama.scss */
+.fotorama__nav--dots {
+  display: block;
+}
+
+/* line 244, lib/fotorama/_fotorama.scss */
+.fotorama__nav--dots .fotorama__nav__frame {
+  width: 18px;
+  height: 30px;
+}
+
+/* line 248, lib/fotorama/_fotorama.scss */
+.fotorama__nav--dots .fotorama__nav__frame--thumb, .fotorama__nav--dots .fotorama__thumb-border {
+  display: none;
+}
+
+/* line 251, lib/fotorama/_fotorama.scss */
+.fotorama__nav--thumbs {
+  display: block;
+}
+
+/* line 254, lib/fotorama/_fotorama.scss */
+.fotorama__nav--thumbs .fotorama__nav__frame {
+  padding-left: 0 !important;
+}
+
+/* line 257, lib/fotorama/_fotorama.scss */
+.fotorama__nav--thumbs .fotorama__nav__frame:last-child {
+  padding-right: 0 !important;
+}
+
+/* line 260, lib/fotorama/_fotorama.scss */
+.fotorama__nav--thumbs .fotorama__nav__frame--dot {
+  display: none;
+}
+
+/* line 263, lib/fotorama/_fotorama.scss */
+.fotorama__dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  position: relative;
+  top: 12px;
+  left: 6px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+/* line 273, lib/fotorama/_fotorama.scss */
+.fotorama__nav__frame.fotorama__active {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* line 277, lib/fotorama/_fotorama.scss */
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+  width: 6px;
+  height: 6px;
+  border: none;
+}
+
+/* line 282, lib/fotorama/_fotorama.scss */
+.fotorama__dot {
+  border-color: #7f7f7f;
+}
+
+/* line 285, lib/fotorama/_fotorama.scss */
+.fotorama__active .fotorama__dot {
+  background-color: #7f7f7f;
+}
+
+/* line 288, lib/fotorama/_fotorama.scss */
+.fotorama__thumb {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 294, lib/fotorama/_fotorama.scss */
+.fotorama__thumb-border {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-color: #00afea;
+  background-image: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0.25), rgba(64, 64, 64, 0.1));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.25), rgba(64, 64, 64, 0.1));
+}
+
+/* line 304, lib/fotorama/_fotorama.scss */
+.fotorama__caption {
+  position: absolute;
+  z-index: 12;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* line 314, lib/fotorama/_fotorama.scss */
+.fotorama__caption a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 320, lib/fotorama/_fotorama.scss */
+.fotorama__caption a:hover {
+  color: #333;
+  border-color: rgba(51, 51, 51, 0.5);
+}
+
+/* line 324, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--rtl .fotorama__caption {
+  left: auto;
+  right: 0;
+}
+
+/* line 328, lib/fotorama/_fotorama.scss */
+.fotorama__caption__wrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+}
+
+@-webkit-keyframes spinner {
+  /* line 336, lib/fotorama/_fotorama.scss */
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 340, lib/fotorama/_fotorama.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  /* line 346, lib/fotorama/_fotorama.scss */
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 350, lib/fotorama/_fotorama.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 355, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__spinner {
+  -webkit-animation: spinner 24s infinite linear;
+  animation: spinner 24s infinite linear;
+}
+
+/* line 359, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__caption, .fotorama__wrap--css3 .fotorama__html, .fotorama__wrap--css3 .fotorama__stage .fotorama__img {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+/* line 367, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--video .fotorama__stage__frame--video .fotorama__caption, .fotorama__wrap--video .fotorama__stage__frame--video .fotorama__html, .fotorama__wrap--video .fotorama__stage__frame--video .fotorama__img {
+  -ms-filter: "alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+/* line 372, lib/fotorama/_fotorama.scss */
+.fotorama__select {
+  cursor: auto;
+}
+
+/* line 375, lib/fotorama/_fotorama.scss */
+.fotorama__video {
+  top: 32px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+@-moz-document url-prefix() {
+  /* line 384, lib/fotorama/_fotorama.scss */
+  .fotorama__active {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+/* line 388, lib/fotorama/_fotorama.scss */
+.fotorama__arr, .fotorama__fullscreen-icon, .fotorama__video-close, .fotorama__video-play {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  cursor: pointer;
+}
+
+/* line 394, lib/fotorama/_fotorama.scss */
+.fotorama__arr {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  margin-top: -16px;
+}
+
+/* line 401, lib/fotorama/_fotorama.scss */
+.fotorama__arr--prev {
+  left: 0;
+  background-position: 0 0;
+}
+
+/* line 405, lib/fotorama/_fotorama.scss */
+.fotorama__arr--next {
+  right: 0;
+  background-position: -32px 0;
+}
+
+/* line 409, lib/fotorama/_fotorama.scss */
+.fotorama__arr--disabled {
+  pointer-events: none;
+  cursor: default;
+  *display: none;
+  opacity: .1;
+}
+
+/* line 415, lib/fotorama/_fotorama.scss */
+.fotorama__fullscreen-icon {
+  width: 32px;
+  height: 32px;
+  top: 0;
+  right: 0;
+  background-position: 0 -32px;
+  z-index: 20;
+}
+
+/* line 423, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen .fotorama__fullscreen-icon {
+  background-position: -32px -32px;
+}
+
+/* line 426, lib/fotorama/_fotorama.scss */
+.fotorama__video-play {
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  margin-left: -48px;
+  margin-top: -48px;
+  background-position: 0 -64px;
+  display: none;
+}
+
+/* line 436, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__video-play {
+  display: block;
+  opacity: 0;
+}
+
+/* line 440, lib/fotorama/_fotorama.scss */
+.fotorama__error .fotorama__video-play, .fotorama__loaded .fotorama__video-play {
+  display: block;
+  opacity: 1;
+}
+
+/* line 444, lib/fotorama/_fotorama.scss */
+.fotorama__nav__frame .fotorama__video-play {
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  margin-top: -16px;
+  background-position: -64px -32px;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* line 453, lib/fotorama/_fotorama.scss */
+.fotorama__video-close {
+  width: 32px;
+  height: 32px;
+  top: 0;
+  right: 0;
+  display: none;
+  background-position: -64px 0;
+  z-index: 20;
+}
+
+/* line 462, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--no-controls .fotorama__arr, .fotorama__wrap--no-controls .fotorama__fullscreen-icon, .fotorama__wrap--video .fotorama__arr, .fotorama__wrap--video .fotorama__fullscreen-icon {
+  display: none;
+  opacity: 0;
+}
+
+/* line 466, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3.fotorama__wrap--slide.fotorama__wrap--no-controls .fotorama__fullscreen-icon, .fotorama__wrap--css3.fotorama__wrap--video .fotorama__fullscreen-icon {
+  display: block;
+  -webkit-transform: translate3d(32px, -32px, 0);
+  transform: translate3d(32px, -32px, 0);
+}
+
+/* line 471, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3.fotorama__wrap--slide.fotorama__wrap--no-controls .fotorama__arr--prev, .fotorama__wrap--css3.fotorama__wrap--video .fotorama__arr--prev {
+  display: block;
+  -webkit-transform: translate3d(-48px, 0, 0);
+  transform: translate3d(-48px, 0, 0);
+}
+
+/* line 476, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3.fotorama__wrap--slide.fotorama__wrap--no-controls .fotorama__arr--next, .fotorama__wrap--css3.fotorama__wrap--video .fotorama__arr--next {
+  display: block;
+  -webkit-transform: translate3d(48px, 0, 0);
+  transform: translate3d(48px, 0, 0);
+}
+
+/* line 481, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--video .fotorama__stage .fotorama__video-play {
+  display: none;
+}
+
+/* line 484, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--video .fotorama__video-close {
+  display: block;
+}
+
+/* line 487, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__video-close {
+  display: block;
+  opacity: 0;
+  -webkit-transform: translate3d(32px, -32px, 0);
+  transform: translate3d(32px, -32px, 0);
+}
+
+/* line 493, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3.fotorama__wrap--video .fotorama__stage .fotorama__video-play {
+  display: block;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* line 498, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3.fotorama__wrap--video .fotorama__video-close {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 503, lib/fotorama/_fotorama.scss */
+.fotorama__wrap--css3 .fotorama__arr, .fotorama__wrap--css3 .fotorama__fullscreen-icon, .fotorama__wrap--css3 .fotorama__video-close, .fotorama__wrap--css3 .fotorama__video-play {
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+/* line 509, lib/fotorama/_fotorama.scss */
+.fotorama__nav:after, .fotorama__nav:before, .fotorama__stage:after, .fotorama__stage:before {
+  content: "";
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 1px 100%, 5px 100%;
+}
+
+/* line 523, lib/fotorama/_fotorama.scss */
+.fotorama__nav:before, .fotorama__stage:before {
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.3) 75%, transparent), -webkit-radial-gradient(0 50%, farthest-side, rgba(0, 0, 0, 0.4), transparent);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-position: 0 0, 0 0;
+  left: -10px;
+}
+
+/* line 529, lib/fotorama/_fotorama.scss */
+.fotorama__nav.fotorama__shadows--left:before, .fotorama__stage.fotorama__shadows--left:before {
+  left: 0;
+}
+
+/* line 532, lib/fotorama/_fotorama.scss */
+.fotorama__nav:after, .fotorama__stage:after {
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.3) 75%, transparent), -webkit-radial-gradient(100% 50%, farthest-side, rgba(0, 0, 0, 0.4), transparent);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-position: 100% 0, 100% 0;
+  right: -10px;
+}
+
+/* line 538, lib/fotorama/_fotorama.scss */
+.fotorama__nav.fotorama__shadows--right:after, .fotorama__stage.fotorama__shadows--right:after {
+  right: 0;
+}
+
+/* line 541, lib/fotorama/_fotorama.scss */
+.fotorama--fullscreen .fotorama__nav:after, .fotorama--fullscreen .fotorama__nav:before, .fotorama--fullscreen .fotorama__stage:after, .fotorama--fullscreen .fotorama__stage:before, .fotorama__wrap--fade .fotorama__stage:after, .fotorama__wrap--fade .fotorama__stage:before, .fotorama__wrap--no-shadows .fotorama__nav:after, .fotorama__wrap--no-shadows .fotorama__nav:before, .fotorama__wrap--no-shadows .fotorama__stage:after, .fotorama__wrap--no-shadows .fotorama__stage:before {
+  display: none;
+}
+
+/* line 5, sass/modules/_lib-tweaks.scss */
+.fotorama__caption__wrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 10, sass/modules/_lib-tweaks.scss */
+.fotorama__caption__wrap p {
+  margin: 0;
+  color: white;
+}

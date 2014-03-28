@@ -1,0 +1,76 @@
+/*   
+Theme Name: aleo
+Theme URI: www.factotum.dk
+Description: Responsive theme for aleo.dk
+Author: Morten Hedelykke Dietz Fuglsang
+Author URI: www.factotum.dk
+Version: Alpha 0.2
+*/
+
+
+/*
+// -------------------------------------
+//		TODO
+// -------------------------------------
+### check if works with height when resizing browser window.
+# where will subnav be on mobile? bottom!
+## fix subnav on mobile.
+# style mobile menu button
+# fix menu on mobile
+# make archive view (rwd view, boxes!)
+### how much css can be abstracted, ~"media object?"
+
+*/
+
+
+// -------------------------------------
+//   Compass imports
+// -------------------------------------
+
+@import "compass/support";
+@import "compass/css3/box-sizing";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "susy";
+@import "breakpoint";
+
+// -------------------------------------
+//   Core import
+// -------------------------------------
+
+
+@import
+	"sass/core/normalize",
+	"sass/core/settings",
+	// Import of ores after settings are in.
+	"ore/ore_extends",
+	"sass/core/helpers",
+	"sass/core/base",
+	"sass/core/content",
+	"sass/core/layout",
+	"sass/core/print";
+
+// -------------------------------------
+//   Modules import
+// -------------------------------------
+
+@import
+	"sass/modules/img-text",
+	"sass/modules/navigation",
+	"sass/modules/product",
+	"sass/modules/sidebar",
+	"sass/modules/slider";
+
+@import "sass/modules/grid";
+
+// -------------------------------------
+//	3rd party plugins
+// -------------------------------------
+@import
+	"lib/fotorama/fotorama";
+
+// -------------------------------------
+//	3rd party tweaks
+// -------------------------------------
+@import
+	"sass/modules/lib-tweaks";

@@ -1,0 +1,64 @@
+<?php
+// Nested inside a div and list for slider
+?>
+<div class="slider--product">
+	<ul>
+
+<?php
+// Getting ready for looping. Anticipating maximum amount of images.
+$i = 1;
+$max_images = 5;
+
+while ($i <= $max_images) {
+	$i_str = (string)$i;
+	$image = get_field('featured_' . $i_str);
+	if( !empty($image) ) {
+
+		// We have an image! Set vars to target attributes
+		$url = $image['url'];
+		$title = $image['title'];
+		$alt = $image['alt'];
+		$caption = $image['caption'];
+
+		// Set sizes
+		// Might not need this as I use picturefill..
+		//$size = 'thumbnail';
+		//$thumb = $image['sizes'][ $size ];
+		//$width = $image['sizes'][ $size . '-width' ];
+		//$height = $image['sizes'][ $size . '-height' ];
+
+		// Make it a list item, for the slider
+		?><li><?php
+
+			// Picturefill markup starts.
+			?>
+
+			<?php // galleria markup ?>
+
+			<div class="galleria">
+    <a href="/img/large1.jpg"><img src="/img/thumb1.jpg" data-big="/img/big1.jpg" data-title="My title" data-description="My description"></a>
+    <a href="/img/large2.jpg"><img src="/img/thumb2.jpg" data-big="/img/big2.jpg" data-title="Another title" data-description="My <em>HTML</em> description"></a>
+</div>
+
+
+			<?php
+/*
+			// Unslider markup
+		    <span data-picture data-alt="<?php echo $alt ?>" title="<?php echo $title; ?>">
+		        <span data-src="<?php echo $image['sizes'][ 'small' ]?>"></span>
+		        <span data-src="<?php echo $image['sizes'][ 'medium' ]?>" 	data-media="(min-device-pixel-ratio: 2.0)"></span>
+		        <span data-src="<?php echo $image['sizes'][ 'medium' ]?>"	data-media="(min-width: 480px)"></span>
+		        <span data-src="<?php echo $image['sizes'][ 'large' ]?>"	data-media="(min-width: 480px) and (min-device-pixel-ratio: 2.0)"></span>
+		        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+		        <noscript>
+		            <img src="<?php echo $image['sizes'][ 'small' ]?>" alt="<?php echo $alt ?>">
+		        </noscript>
+		    </span>*/
+		    ?>
+  		</li>
+
+  	<?php }
+  	$i++;
+} ?>
+</ul>
+</div>

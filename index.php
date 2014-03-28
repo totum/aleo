@@ -1,6 +1,6 @@
 <?php include (TEMPLATEPATH . '/partials/_header.php'); ?>
 		
-	<section class="wrap-main  lc  clear">
+	<main class="wrap-main  lc  clear" role="main">
 
 		<!-- Category name, h1 -->
 
@@ -18,7 +18,7 @@
 			<?php while (have_posts()) : the_post(); ?>
 				<?php
 				// Checks for post selected image. Inserts if true.
-				if( has_post_thumbnail() ) {
+				/*if( has_post_thumbnail() ) {
 					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-large', true );
 					$thumb_url = $thumb['0'];
 					$thumb_large = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-xlarge', true );
@@ -28,10 +28,15 @@
 							<img class="product__img" src="<?php echo $thumb_url; ?>" />
 							<h1 class="h2  img-text__title  img-text__title--product"><span class="img-text__bg"><?php the_title(); ?></span></h1>
 						</a>
-				<?php } ?>	
+				<?php }*/ ?>
+				<div class="img-text__container">
+					<?php include (TEMPLATEPATH . '/partials/_productgallery.php'); ?>
 
-				<?php include (TEMPLATEPATH . '/ore/ore_template-featuredgallery.php'); ?>
-
+					<h1 class="h1  img-text__title  img-text__title--product">
+						<span class="img-text__bg"><?php the_title(); ?></span>
+					</h1>
+				</div>
+				
 				<?php the_content(); ?>
 					
 			<?php endwhile; ?>
@@ -48,7 +53,7 @@
 
 	<div class="clear"></div>
 
-	</section>
+	</main>
 
 <?php include (TEMPLATEPATH . '/partials/_maker.php'); ?>
 

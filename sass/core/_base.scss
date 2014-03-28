@@ -12,6 +12,10 @@ html {
 body {
 	background-color: hsl(0,10%,90%);
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    -webkit-animation: bugfix infinite 1s; // For toggle nav
+}
+@-webkit-keyframes bugfix {
+    from {padding:0;} to {padding:0;} // For toggle nav
 }
 
 ul {
@@ -37,8 +41,8 @@ h2, .h2 {
 }
 h3, .h3 {
     @include adjust-font-size-to( $h3-font-size );
-    @include leader(1, $h3-font-size);
-    @include trailer(1, $h3-font-size);
+    @include leader(1.5, $h3-font-size);
+    @include trailer(1.5, $h3-font-size);
 }
 h4, .h4 {
     @include adjust-font-size-to( $h4-font-size );
@@ -76,6 +80,14 @@ h6, .h6 {
 }
 .clear {
 	clear: both;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
 }
 
 

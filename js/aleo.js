@@ -1,12 +1,15 @@
 $(document).ready(function(){
-	$('.slider--product').unslider({
+
+    // Galleria.loadTheme(SiteParameters.theme_directory+'/js/galleria/themes/classic/galleria.classic.min.js');
+    // Galleria.run('.slider--product');
+/*	$('.slider--product').unslider({
 		speed: 500,               //  The speed to animate each slide (in milliseconds)
 		delay: 3000,              //  The delay between slide animations (in milliseconds)
 		complete: function() {},  //  A function that gets called after every slide animation
 		keys: true,               //  Enable keyboard (left, right) arrow shortcuts
 		dots: true,               //  Display dot navigation
 		fluid: true              //  Support responsive design. May break non-responsive designs
-		});
+		});*/
 });
 /*$(document).ready(function(){
 //start homepage banner
@@ -44,3 +47,4 @@ $(document).ready(function(){
                 //initilize the unslider plugin, but only after the first image loads
                 $('.slider--product ul li img').first().load(function(){callUnslider ()});
 });*/
+

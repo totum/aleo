@@ -14,9 +14,9 @@ $base-font-size: 15px;
 $base-line-height: 22px;
 @include establish-baseline;
 
-$h1-font-size: 1.8    * $base-font-size;
-$h2-font-size: 1.4  * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
+$h1-font-size: 1.5    * $base-font-size;
+$h2-font-size: 1.25  * $base-font-size;
+$h3-font-size: 1.1 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
@@ -26,7 +26,7 @@ $h6-font-size: 0.67 * $base-font-size;
 // 		s-* for susy specific
 // 		l-* for vars passed to layout
 // -------------------------------------
-$s-grid-bg: show; // For showing the susy and rhytm background
+$s-grid-bg: hide; // Show/Hide - For showing the susy and rhytm background
 
 // ----- Generic vars ----- //
 $s-boxsizing: border-box;
@@ -89,3 +89,6 @@ $s-container-xlarge: (
 // -------------------------------------
 $color-accent: red;
 $color-accent2: purple;
+
+$color-caption: #fff;
+$color-caption-bg: rgba(0, 0, 0, 0.8);

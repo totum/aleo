@@ -98,7 +98,9 @@
 
 .wrap-main {
 	@include leader(1);
-
+	@include breakpoint($l-break-medium) {
+		@include leader(1.5);
+	}
 	@extend %ore-p__sides--small;
 	@extend %ore-p__sides--small2;
 	@extend %ore-p__sides--medium--0;

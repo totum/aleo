@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Site",
+				"SiteParameters"
+			],
+			[
 				"l-break",
 				"l-break-medium"
 			],
@@ -91,7 +95,7 @@
 			"file": "sass/core/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 2345,
+				"buffer_size": 2419,
 				"line_ending": "Unix"
 			}
 		},
@@ -107,7 +111,7 @@
 			"file": "sass/core/_base.scss",
 			"settings":
 			{
-				"buffer_size": 1588,
+				"buffer_size": 1678,
 				"line_ending": "Unix"
 			}
 		},
@@ -115,7 +119,7 @@
 			"file": "sass/core/_layout.scss",
 			"settings":
 			{
-				"buffer_size": 2956,
+				"buffer_size": 3022,
 				"line_ending": "Unix"
 			}
 		},
@@ -128,18 +132,10 @@
 			}
 		},
 		{
-			"file": "sass/core/_reset.scss",
-			"settings":
-			{
-				"buffer_size": 12667,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "sass/modules/_grid.scss",
 			"settings":
 			{
-				"buffer_size": 761,
+				"buffer_size": 789,
 				"line_ending": "Unix"
 			}
 		},
@@ -156,7 +152,15 @@
 			"file": "sass/modules/_img-text.scss",
 			"settings":
 			{
-				"buffer_size": 506,
+				"buffer_size": 501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ore/_ore_extends.scss",
+			"settings":
+			{
+				"buffer_size": 4014,
 				"line_ending": "Unix"
 			}
 		},
@@ -172,7 +176,15 @@
 			"file": "sass/modules/_product.scss",
 			"settings":
 			{
-				"buffer_size": 159,
+				"buffer_size": 165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/hacktop/Desktop/example.html",
+			"settings":
+			{
+				"buffer_size": 805,
 				"line_ending": "Unix"
 			}
 		},
@@ -180,15 +192,7 @@
 			"file": "sass/modules/_sidebar.scss",
 			"settings":
 			{
-				"buffer_size": 652,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ore/ore_extends.scss",
-			"settings":
-			{
-				"buffer_size": 4011,
+				"buffer_size": 814,
 				"line_ending": "Unix"
 			}
 		},
@@ -204,7 +208,7 @@
 			"file": "partials/_sidebar.php",
 			"settings":
 			{
-				"buffer_size": 1856,
+				"buffer_size": 2646,
 				"line_ending": "Unix"
 			}
 		},
@@ -212,7 +216,23 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 1685,
+				"buffer_size": 1877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "partials/_productgallery.php",
+			"settings":
+			{
+				"buffer_size": 2270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "archive.php",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -220,40 +240,63 @@
 			"file": "ore/ore_template-featuredgallery.php",
 			"settings":
 			{
-				"buffer_size": 2775,
+				"buffer_size": 3050,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ore/ore_template-head.php",
+			"file": "sass/orefeaturedtemp.html",
 			"settings":
 			{
-				"buffer_size": 1473,
+				"buffer_size": 2053,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "sass/style.scss",
+			"file": "/home/hacktop/Dropbox/Documents & Projects/FACTOTUM/fixperms_Updating_WP.txt",
 			"settings":
 			{
-				"buffer_size": 1144,
+				"buffer_size": 114,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/fotorama/_fotorama.scss",
+			"settings":
+			{
+				"buffer_size": 16675,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "TODO\n\n\n# where will subnav be on mobile? toggle?\n\n# style mobile menu button\n\n#semantics in siudebar (headings or not?)",
+			"file": "config.rb",
 			"settings":
 			{
-				"buffer_size": 119,
-				"line_ending": "Unix",
-				"name": "TODO"
+				"buffer_size": 872,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 1696,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/modules/_lib-tweaks.scss",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "js/aleo.js",
 			"settings":
 			{
-				"buffer_size": 2822,
+				"buffer_size": 2983,
 				"line_ending": "Unix"
 			}
 		},
@@ -261,15 +304,7 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 2442,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ore/ore_functions.php",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 2305,
 				"line_ending": "Unix"
 			}
 		}
@@ -310,6 +345,20 @@
 	},
 	"file_history":
 	[
+		"/var/www/wordpress/wp-content/themes/aleo/sass/style.scss",
+		"/var/www/wordpress/wp-content/themes/aleo/sass/galleria/_galleria.classic.scss",
+		"/var/www/wordpress/wp-content/themes/aleo/style.css",
+		"/var/www/wordpress/wp-content/themes/aleo/js/fotorama.js",
+		"/var/www/wordpress/wp-content/themes/aleo/js/galleria/themes/classic/galleria.classic.css",
+		"/var/www/wordpress/wp-content/themes/aleo/js/galleria.classic.js",
+		"/var/www/wordpress/wp-content/themes/carson/functions.php",
+		"/var/www/wordpress/wp-content/themes/aleo/sass/core/_reset.scss",
+		"/home/hacktop/Dropbox/Documents & Projects/FACTOTUM/fixperms_Updating_WP.txt",
+		"/home/hacktop/Dropbox/CraftDev/ore/ore_functions.php",
+		"/var/www/wordpress/wp-content/themes/aleo/ore/ore_functions.php",
+		"/var/www/wordpress/wp-content/themes/aleo/ore/ore_template-head.php",
+		"/var/www/wordpress/wp-content/themes/aleo/ore/ore_extends.scss",
+		"/var/www/wordpress/wp-admin/network/settings.php",
 		"/home/hacktop/Downloads/ftpquota.txt",
 		"/var/www/wordpress/wp-content/themes/aleo/sass/core/_normalize.scss",
 		"/var/www/wordpress/wp-content/themes/aleo/partials/_maker.php",
@@ -324,13 +373,10 @@
 		"/var/www/wordpress/wp-content/themes/aleo/partials/_header.php",
 		"/var/www/wordpress/wp-content/themes/aleo/js/aleo_sidebarmargin.js",
 		"/var/www/wordpress/wp-content/themes/aleo/sass/core/_states.scss",
-		"/var/www/wordpress/wp-content/themes/aleo/style.css",
 		"/var/www/wordpress/wp-content/themes/aleo/sass/core/_settings.scss",
-		"/var/www/wordpress/wp-content/themes/aleo/sass/core/_reset.scss",
 		"/var/www/wordpress/wp-content/themes/aleo/sass/modules/_content.scss",
 		"/var/www/wordpress/wp-content/themes/aleo/sass/modules/_button.scss",
 		"/var/www/wordpress/wp-content/themes/aleo/ore/ore_extends.php",
-		"/var/www/wordpress/wp-content/themes/aleo/ore/ore_functions.php",
 		"/var/www/wordpress/wp-content/themes/aleo/ore/ore_template-.php",
 		"/var/www/wordpress/wp-content/themes/craftdev/smelt/smelt_extends.scss",
 		"/home/hacktop/Dropbox/CraftDev/ore/ore_extends.scss",
@@ -340,7 +386,6 @@
 		"/var/www/wordpress/wp-content/themes/craftdev/ore/ore_extends.php",
 		"/home/hacktop/Dropbox/CraftDev/ore/ore_template-.php",
 		"/home/hacktop/Dropbox/CraftDev/ore/ore_template-head.php",
-		"/home/hacktop/Dropbox/CraftDev/ore/ore_functions.php",
 		"/home/hacktop/Dropbox/CraftDev/ore/ore_extends.php",
 		"/var/www/wordpress/wp-content/themes/aleo/Gemfile",
 		"/var/www/wordpress/wp-content/themes/Smelt/partials/_header.php",
@@ -382,7 +427,6 @@
 		"/var/www/wordpress/wp-content/themes/Smelt/sass/core/_reset.scss",
 		"/var/www/wordpress/wp-content/themes/Smelt/style.css",
 		"/var/www/wordpress/wp-content/themes/Smelt/sass/core/normalize.css",
-		"/var/www/wordpress/wp-content/themes/aleo/sass/style.scss",
 		"/var/www/wordpress/wp-content/themes/Smelt/sass/modules/_button.scss",
 		"/var/www/wordpress/wp-content/themes/Smelt/sass/modules/_navigation.scss",
 		"/var/www/wordpress/wp-content/themes/Smelt/sass/modules/_sidebar.scss",
@@ -428,16 +472,7 @@
 		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_carousel.scss",
 		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_grid.scss",
 		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_img-box.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_list.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_navigation.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_sidebar.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_temp.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/core/_settings.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/core/_layout.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/core/_base.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/core/_helpers.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/core/_content.scss",
-		"/var/www/wordpress/wp-content/themes/aleo2/sass/core/_reset.scss"
+		"/var/www/wordpress/wp-content/themes/aleo2/sass/modules/_list.scss"
 	],
 	"find":
 	{
@@ -456,6 +491,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"png",
+			"fotorama",
+			".png",
+			"@media",
 			".banner",
 			"s-",
 			"pre",
@@ -519,15 +558,15 @@
 					"file": "sass/core/_settings.scss",
 					"settings":
 					{
-						"buffer_size": 2345,
+						"buffer_size": 2419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1639,
-								1639
+								793,
+								793
 							]
 						],
 						"settings":
@@ -536,7 +575,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 408.0,
+						"translation.y": 232.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -553,8 +592,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								51,
+								51
 							]
 						],
 						"settings":
@@ -572,15 +611,15 @@
 					"file": "sass/core/_base.scss",
 					"settings":
 					{
-						"buffer_size": 1588,
+						"buffer_size": 1678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								453,
-								453
+								645,
+								645
 							]
 						],
 						"settings":
@@ -600,15 +639,15 @@
 					"file": "sass/core/_layout.scss",
 					"settings":
 					{
-						"buffer_size": 2956,
+						"buffer_size": 3022,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1768,
-								1768
+								2301,
+								2301
 							]
 						],
 						"settings":
@@ -617,7 +656,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1995.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -634,8 +673,8 @@
 						"selection":
 						[
 							[
-								203,
-								203
+								281,
+								281
 							]
 						],
 						"settings":
@@ -643,7 +682,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -651,51 +690,23 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 5,
-					"file": "sass/core/_reset.scss",
-					"settings":
-					{
-						"buffer_size": 12667,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5919,
-								5919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4772.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "sass/modules/_grid.scss",
 					"settings":
 					{
-						"buffer_size": 761,
+						"buffer_size": 789,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								600,
-								600
+								195,
+								195
 							]
 						],
 						"settings":
@@ -704,13 +715,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "sass/modules/_slider.scss",
 					"settings":
 					{
@@ -733,25 +744,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "sass/modules/_img-text.scss",
 					"settings":
 					{
-						"buffer_size": 506,
+						"buffer_size": 501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								501,
+								501
 							]
 						],
 						"settings":
@@ -760,7 +771,35 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "ore/_ore_extends.scss",
+					"settings":
+					{
+						"buffer_size": 4014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4014,
+								4014
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3838.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -787,7 +826,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 399.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -797,15 +836,15 @@
 					"file": "sass/modules/_product.scss",
 					"settings":
 					{
-						"buffer_size": 159,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								6,
+								6
 							]
 						],
 						"settings":
@@ -820,18 +859,46 @@
 				},
 				{
 					"buffer": 11,
-					"file": "sass/modules/_sidebar.scss",
+					"file": "/home/hacktop/Desktop/example.html",
 					"settings":
 					{
-						"buffer_size": 652,
+						"buffer_size": 805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								449,
-								449
+								608,
+								608
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "sass/modules/_sidebar.scss",
+					"settings":
+					{
+						"buffer_size": 814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
 							]
 						],
 						"settings":
@@ -844,39 +911,11 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "ore/ore_extends.scss",
-					"settings":
-					{
-						"buffer_size": 4011,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3838,
-								3838
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3744.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -911,15 +950,15 @@
 					"file": "partials/_sidebar.php",
 					"settings":
 					{
-						"buffer_size": 1856,
+						"buffer_size": 2646,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1812,
-								1812
+								581,
+								581
 							]
 						],
 						"settings":
@@ -927,8 +966,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.x": 200.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -938,15 +977,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 1685,
+						"buffer_size": 1877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								965,
-								965
+								1308,
+								1308
 							]
 						],
 						"settings":
@@ -954,183 +993,42 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 48.0,
-						"translation.y": 204.0,
+						"translation.x": 0.0,
+						"translation.y": 365.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 16,
-					"file": "ore/ore_template-featuredgallery.php",
+					"file": "partials/_productgallery.php",
 					"settings":
 					{
-						"buffer_size": 2775,
+						"buffer_size": 2270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1523,
-								1523
+								1024,
+								1024
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 112.0,
-						"translation.y": 408.0,
+						"translation.x": 0.0,
+						"translation.y": 276.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 17,
-					"file": "ore/ore_template-head.php",
-					"settings":
-					{
-						"buffer_size": 1473,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "sass/style.scss",
-					"settings":
-					{
-						"buffer_size": 1144,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								976,
-								976
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 418.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"settings":
-					{
-						"buffer_size": 119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								76,
-								76
-							]
-						],
-						"settings":
-						{
-							"auto_name": "TODO",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "js/aleo.js",
-					"settings":
-					{
-						"buffer_size": 2822,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								465,
-								465
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 64.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "functions.php",
-					"settings":
-					{
-						"buffer_size": 2442,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1707,
-								1707
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 454.0,
-						"translation.y": 357.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "ore/ore_functions.php",
+					"file": "archive.php",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1147,6 +1045,252 @@
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "ore/ore_template-featuredgallery.php",
+					"settings":
+					{
+						"buffer_size": 3050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3050,
+								3050
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "sass/orefeaturedtemp.html",
+					"settings":
+					{
+						"buffer_size": 2053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/home/hacktop/Dropbox/Documents & Projects/FACTOTUM/fixperms_Updating_WP.txt",
+					"settings":
+					{
+						"buffer_size": 114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 21,
+					"file": "lib/fotorama/_fotorama.scss",
+					"settings":
+					{
+						"buffer_size": 16675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9426,
+								9426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5582.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "config.rb",
+					"settings":
+					{
+						"buffer_size": 872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "style.scss",
+					"settings":
+					{
+						"buffer_size": 1696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								546,
+								546
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "sass/modules/_lib-tweaks.scss",
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "js/aleo.js",
+					"settings":
+					{
+						"buffer_size": 2983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 2305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								646,
+								646
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1197,13 +1341,13 @@
 		"cols":
 		[
 			0.0,
-			0.506223905035,
+			0.431428571429,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.479508415709,
+			0.377664974619,
 			1.0
 		]
 	},
