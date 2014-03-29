@@ -10,12 +10,13 @@ Version: Alpha 0.2
 // -------------------------------------
 //		TODO
 // -------------------------------------
-### check if works with height when resizing browser window.
-# where will subnav be on mobile? bottom!
-## fix subnav on mobile.
+# mobile version [prpoblems]
+## load time fuxked. img sizes?
+
 # make archive view (rwd view, boxes!)
 ### how much css can be abstracted, ~"media object?"
-
+#functions img sizes
+## potentially tweak product title margin top too.
 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
@@ -526,12 +527,12 @@ html {
 %block-1b-half {
     
 }*/
-/* line 114, ore/_ore_extends.scss */
+/* line 115, ore/_ore_extends.scss */
 .site-logo {
   margin: 0;
 }
 
-/* line 123, ore/_ore_extends.scss */
+/* line 124, ore/_ore_extends.scss */
 p {
   margin-top: 22px;
   margin-top: 1.46667rem;
@@ -539,28 +540,28 @@ p {
   margin-bottom: 1.46667rem;
 }
 
-/* line 131, ore/_ore_extends.scss */
+/* line 132, ore/_ore_extends.scss */
 .wrap-main {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
 @media (min-width: 480px) {
-  /* line 136, ore/_ore_extends.scss */
+  /* line 137, ore/_ore_extends.scss */
   .wrap-main {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 146, ore/_ore_extends.scss */
+  /* line 147, ore/_ore_extends.scss */
   .wrap-main {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 176, ore/_ore_extends.scss */
-.img-text__title--img-grid, .sidebar__title__span, .img-grid__img img {
+/* line 177, ore/_ore_extends.scss */
+.img-text__title--sidebar {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -568,23 +569,23 @@ p {
 }
 
 /* Nicolas Gallagher micro clearfix */
-/* line 187, ore/_ore_extends.scss */
+/* line 188, ore/_ore_extends.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
 
-/* line 188, ore/_ore_extends.scss */
+/* line 189, ore/_ore_extends.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 206, ore/_ore_extends.scss */
-.img-text__container, .img-grid__img img {
+/* line 207, ore/_ore_extends.scss */
+.img-text__container, .sidebar__item__img img {
   display: block;
 }
 
-/* line 211, ore/_ore_extends.scss */
+/* line 212, ore/_ore_extends.scss */
 [id="toggle-nav"] {
   position: absolute;
   height: 1px;
@@ -593,14 +594,50 @@ p {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 222, ore/_ore_extends.scss */
+/* line 223, ore/_ore_extends.scss */
 .site-logo {
   text-align: left;
 }
 
-/* line 225, ore/_ore_extends.scss */
+/* line 226, ore/_ore_extends.scss */
 [for="toggle-nav"] {
   text-align: right;
+}
+
+/* line 230, ore/_ore_extends.scss */
+.img-text__container {
+  position: relative;
+}
+
+/* line 234, ore/_ore_extends.scss */
+.img-text__title--product, .img-text__title--sidebar {
+  position: absolute;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.eot") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, sass/core/_fonts.scss */
+[data-icon] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, sass/core/_fonts.scss */
+[data-icon='menu']:before {
+  content: "\e600";
 }
 
 /* line 7, sass/core/_base.scss */
@@ -835,14 +872,6 @@ h6, .h6 {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-size: 8.33333%, 100% 22px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top;
 }
 /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
 .site-header::after,
@@ -858,14 +887,6 @@ h6, .h6 {
     width: 85em;
     margin-left: auto;
     margin-right: auto;
-    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-size: 7.08333em, 100% 22px;
-    background-origin: content-box, border-box;
-    background-clip: content-box, border-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
   .wrap-main::after {
@@ -895,14 +916,6 @@ h6, .h6 {
     width: 85em;
     margin-left: auto;
     margin-right: auto;
-    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -o-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-    background-size: 7.08333em, 100% 22px;
-    background-origin: content-box, border-box;
-    background-clip: content-box, border-box;
-    background-position: left top;
   }
   /* line 12, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/output/support/_clearfix.scss */
   .site-banner::after {
@@ -1088,34 +1101,37 @@ h6, .h6 {
 * print styles
 * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/
 */
-/* line 6, sass/modules/_img-text.scss */
-.img-text__title--img-grid {
-  top: 5px;
-  right: 0;
-  opacity: 0.3;
+/* -------------------------------------
+	Img-text
+	For text on images.
+	container = usually image. can be anchor
+	title = header tag
+	bg = span
+------------------------------------- */
+/* Base
+---------------------------------------- */
+/* line 19, sass/modules/_img-text.scss */
+.img-text__bg--product, .img-text__bg--sidebar {
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+  color: white;
 }
 
-/* line 13, sass/modules/_img-text.scss */
-.img-text__container {
-  position: relative;
-}
-
-/* line 18, sass/modules/_img-text.scss */
-.img-text__title {
-  position: absolute;
-}
-
-/* line 21, sass/modules/_img-text.scss */
+/* Product
+---------------------------------------- */
+/* line 29, sass/modules/_img-text.scss */
 .img-text__title--product {
   top: 0;
   left: 0;
 }
 
-/* line 28, sass/modules/_img-text.scss */
-.img-text__bg {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5em;
-  color: white;
+/* Sidebar
+---------------------------------------- */
+/* line 42, sass/modules/_img-text.scss */
+.img-text__title--sidebar {
+  top: 5px;
+  right: 0;
 }
 
 /* line 5, sass/modules/_navigation.scss */
@@ -1130,17 +1146,11 @@ h6, .h6 {
   padding-top: 0.73333rem;
   padding-bottom: 11px;
   padding-bottom: 0.73333rem;
-  text-rendering: geometricPrecision;
-  font-weight: strong;
   padding-right: 0.5rem;
 }
 @media (min-width: 480px) {
   /* line 5, sass/modules/_navigation.scss */
   [for="toggle-nav"] {
-    font-size: 30px;
-    font-size: 2rem;
-    line-height: 44px;
-    line-height: 2.93333rem;
     padding-right: 1rem;
   }
 }
@@ -1151,14 +1161,14 @@ h6, .h6 {
   }
 }
 
-/* line 37, sass/modules/_navigation.scss */
+/* line 29, sass/modules/_navigation.scss */
 .menu {
   list-style-type: none;
   text-align: left;
   background-color: black;
   padding-left: 0;
 }
-/* line 43, sass/modules/_navigation.scss */
+/* line 35, sass/modules/_navigation.scss */
 .menu li > a {
   display: block;
   text-decoration: none;
@@ -1172,27 +1182,27 @@ h6, .h6 {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
-/* line 48, sass/modules/_navigation.scss */
+/* line 40, sass/modules/_navigation.scss */
 .menu li > a:hover {
   background-color: #e8e3e3;
   color: black;
 }
 
 @media (min-width: 768px) {
-  /* line 56, sass/modules/_navigation.scss */
+  /* line 48, sass/modules/_navigation.scss */
   .menu {
     max-height: 3em;
     margin: 0;
     text-align: right;
   }
-  /* line 60, sass/modules/_navigation.scss */
+  /* line 52, sass/modules/_navigation.scss */
   .menu li {
     display: inline-block;
     margin-left: 0.5em;
     padding-left: 0.5em;
   }
 
-  /* line 66, sass/modules/_navigation.scss */
+  /* line 58, sass/modules/_navigation.scss */
   .menu li > a {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -1205,34 +1215,119 @@ h6, .h6 {
 	//padding-bottom: 100%;
 	//@include box-sizing(content-box);
 } */
-/* line 1, sass/modules/_sidebar.scss */
-.sidebar:hover .img-text__title,
-.sidebar:hover .img-text__img img {
-  opacity: 0.5;
+/* Layout
+---------------------------------------- */
+/* line 4, sass/modules/_sidebar.scss */
+.sidebar__list {
+  list-style-type: none;
+  line-height: 0;
 }
 
-/* line 5, sass/modules/_sidebar.scss */
-.sidebar:hover .sidebar__title__span {
-  background-color: white;
-  color: #000;
+@media (max-width: 479px) {
+  /* line 9, sass/modules/_sidebar.scss */
+  .sidebar__item {
+    width: 49.15254%;
+    float: left;
+  }
+  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+  .sidebar__item:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+  .sidebar__item:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
 }
-
-/* line 10, sass/modules/_sidebar.scss */
-.sidebar__item:hover .img-text__title,
-.sidebar__item:hover .img-text__img img {
-  opacity: 1;
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 9, sass/modules/_sidebar.scss */
+  .sidebar__item {
+    width: 32.20339%;
+    float: left;
+  }
+  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+  .sidebar__item:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+  .sidebar__item:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
+  .sidebar__item:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    margin-right: -100%;
+    clear: none;
+  }
 }
-
 @media (min-width: 768px) {
-  /* line 15, sass/modules/_sidebar.scss */
-  .sidebar__title {
-    position: absolute;
+  /* line 9, sass/modules/_sidebar.scss */
+  .sidebar__item {
+    overflow: hidden;
+    display: block;
+    padding-bottom: 0.3em;
+    width: 100%;
+    float: left;
   }
 }
 
-/* line 22, sass/modules/_sidebar.scss */
-.sidebar__title__span {
-  background-color: rgba(255, 255, 255, 0.5);
+@media (min-width: 1025px) {
+  /* line 29, sass/modules/_sidebar.scss */
+  .sidebar__item:nth-child(odd) {
+    width: 49.87531%;
+    float: left;
+    margin-right: 0.24938%;
+    padding-right: 0.15em;
+  }
+
+  /* line 35, sass/modules/_sidebar.scss */
+  .sidebar__item:nth-child(even) {
+    width: 49.87531%;
+    float: right;
+    padding-left: 0.15em;
+  }
+
+  /* line 42, sass/modules/_sidebar.scss */
+  .sidebar__item:first-child {
+    width: 49.87531%;
+    float: left;
+    margin-right: 0.24938%;
+    margin-right: 50%;
+  }
+}
+/* line 50, sass/modules/_sidebar.scss */
+.sidebar__item__img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* Sidebar title
+---------------------------------------- */
+@media (min-width: 768px) {
+  /* line 58, sass/modules/_sidebar.scss */
+  .sidebar__title {
+    margin-bottom: 80%;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 58, sass/modules/_sidebar.scss */
+  .sidebar__title {
+    margin-bottom: 35%;
+  }
+}
+
+/* line 72, sass/modules/_sidebar.scss */
+.sidebar__title__bg {
+  background-color: white;
   color: rgba(0, 0, 0, 0.7);
   white-space: nowrap;
   padding-left: 0.5em;
@@ -1248,32 +1343,33 @@ h6, .h6 {
   font-style: italic;
 }
 
-/* line 34, sass/modules/_sidebar.scss */
-.sidebar__list {
-  list-style-type: none;
-  line-height: 0;
-}
-
-/* line 40, sass/modules/_sidebar.scss */
-.sidebar__item {
-  width: 100%;
-}
-
+/* Opacity & Hovers
+---------------------------------------- */
 @media (min-width: 768px) {
-  /* line 44, sass/modules/_sidebar.scss */
-  .sidebar__item:first-child:before {
-    content: "";
-    display: block;
-    margin-top: 130%;
+  /* line 88, sass/modules/_sidebar.scss */
+  .sidebar__title__bg,
+  .sidebar__item__img img,
+  .img-text__bg--sidebar {
+    opacity: 0.3;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
-}
-@media (min-width: 1025px) {
-  /* line 44, sass/modules/_sidebar.scss */
-  .sidebar__item:first-child:before {
-    margin-top: 105%;
-  }
-}
 
+  /* line 95, sass/modules/_sidebar.scss */
+  .sidebar:hover .sidebar__title__bg,
+  .sidebar:hover .sidebar__item__img img,
+  .sidebar:hover .img-text__bg--sidebar {
+    opacity: 0.6;
+  }
+
+  /* line 101, sass/modules/_sidebar.scss */
+  .sidebar__item:hover .sidebar__item__img img,
+  .sidebar__item:hover .img-text__bg--sidebar {
+    opacity: 1;
+  }
+}
 /* line 1, sass/modules/_slider.scss */
 .slider--product {
   position: relative;
@@ -1294,92 +1390,6 @@ h6, .h6 {
 .slider--product img {
   width: 100%;
   height: auto;
-}
-
-/* line 5, sass/modules/_grid.scss */
-.img-grid__itm {
-  width: 49.15254%;
-  float: left;
-}
-/* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
-.img-grid__itm:nth-child(2n + 1) {
-  margin-left: 0;
-  margin-right: -100%;
-  clear: both;
-  margin-left: 0;
-}
-/* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
-.img-grid__itm:nth-child(2n + 2) {
-  margin-left: 50.84746%;
-  margin-right: -100%;
-  clear: none;
-}
-@media (min-width: 480px) {
-  /* line 5, sass/modules/_grid.scss */
-  .img-grid__itm {
-    width: 32.20339%;
-    float: left;
-  }
-  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
-  .img-grid__itm:nth-child(3n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: both;
-    margin-left: 0;
-  }
-  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
-  .img-grid__itm:nth-child(3n + 2) {
-    margin-left: 33.89831%;
-    margin-right: -100%;
-    clear: none;
-  }
-  /* line 63, ../../../../../../home/hacktop/.rvm/gems/ruby-2.1.0/gems/susy-2.0.0.rc.1/sass/susy/language/susy/_gallery.scss */
-  .img-grid__itm:nth-child(3n + 3) {
-    margin-left: 67.79661%;
-    margin-right: -100%;
-    clear: none;
-  }
-}
-@media (min-width: 768px) {
-  /* line 5, sass/modules/_grid.scss */
-  .img-grid__itm {
-    overflow: hidden;
-    display: block;
-    padding-bottom: 0.3em;
-    width: 100%;
-    float: left;
-  }
-}
-
-@media (min-width: 1025px) {
-  /* line 20, sass/modules/_grid.scss */
-  .img-grid__itm:nth-child(odd) {
-    width: 49.87531%;
-    float: left;
-    margin-right: 0.24938%;
-    padding-right: 0.15em;
-  }
-
-  /* line 26, sass/modules/_grid.scss */
-  .img-grid__itm:nth-child(even) {
-    width: 49.87531%;
-    float: right;
-    padding-left: 0.15em;
-  }
-
-  /* line 34, sass/modules/_grid.scss */
-  .img-grid__itm:first-child {
-    width: 49.87531%;
-    float: left;
-    margin-right: 0.24938%;
-    margin-right: 50%;
-  }
-}
-/* line 42, sass/modules/_grid.scss */
-.img-grid__img img {
-  max-height: 100%;
-  max-width: 100%;
-  opacity: 0.3;
 }
 
 /*!* Fotorama 4.5.0 | http://fotorama.io/license/ */

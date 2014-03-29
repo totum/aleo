@@ -12,12 +12,13 @@ Version: Alpha 0.2
 // -------------------------------------
 //		TODO
 // -------------------------------------
-### check if works with height when resizing browser window.
-# where will subnav be on mobile? bottom!
-## fix subnav on mobile.
+# mobile version [prpoblems]
+## load time fuxked. img sizes?
+
 # make archive view (rwd view, boxes!)
 ### how much css can be abstracted, ~"media object?"
-
+#functions img sizes
+## potentially tweak product title margin top too.
 */
 
 
@@ -42,6 +43,7 @@ Version: Alpha 0.2
 	"sass/core/settings",
 	// Import of ores after settings are in.
 	"ore/ore_extends",
+	"sass/core/fonts",
 	"sass/core/helpers",
 	"sass/core/base",
 	"sass/core/content",

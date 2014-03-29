@@ -1,4 +1,4 @@
-		<aside class="nav-sidebar  sidebar  img-text__container  nav  lc">
+		<aside class="nav-sidebar  sidebar  nav  lc">
 
 			<?php
 			// Store post ID in variable to access in aside
@@ -17,10 +17,10 @@
 			$wp_query = new WP_Query( $args );
 				if ( $wp_query->have_posts() ): ?>
 					<h2 class="h3  sidebar__title">
-						<span class="sidebar__title__span">More <?php echo $cat_name ?></span>
+						<span class="sidebar__title__bg">More <?php echo $cat_name ?></span>
 					</h2>
 
-					<ul class="sidebar__list  grid--img  nav-list">
+					<ul class="sidebar__list">
 					
 					<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 						<?php
@@ -29,7 +29,7 @@
 						if ( $aside_post_id == $main_post_id ) : continue;						
 						else : ?>
 
-							<li class="sidebar__item  img-grid__itm">
+							<li class="sidebar__item">
 								<?php
 								// Checks for ACF featured image #1
   								$feat_image = get_field('featured_1');
@@ -42,9 +42,9 @@
 									$caption_feat = $image['caption'];
 								// Picturefill markup starts.
 								?>
-								<a href="<?php the_permalink() ?>" class="img-text__container  img-grid__container">
+								<a href="<?php the_permalink() ?>" class="img-text__container">
 
-									<span class="sidebar__item__img  img-grid__img  img-text__img" data-picture data-alt="<?php echo $alt_feat ?>" title="<?php echo $title_feat; ?>">
+									<span class="sidebar__item__img" data-picture data-alt="<?php echo $alt_feat ?>" title="<?php echo $title_feat; ?>">
 
 										<span data-src="<?php echo $feat_image['sizes'][ 'thumb2' ]?>"></span>
 								        <span data-src="<?php echo $feat_image['sizes'][ 'small' ]?>" 	data-media="(min-device-pixel-ratio: 2.0)"></span>
@@ -55,7 +55,9 @@
 								    </span>
 								
 									<!-- <img class="sidebar__item__img  img-grid__img  img-text__img" src="<?php echo $thumb_url; ?>" /> -->
-									<h3 class="sidebar__item__title  h5  img-text__title  img-text__title--img-grid"><span class="img-text__bg"><?php the_title(); ?></span></h3>
+									<h3 class="h5  img-text__title--sidebar">
+										<span class="img-text__bg--sidebar"><?php the_title(); ?></span>
+									</h3>
 								</a>
 
 								<?php } ?>

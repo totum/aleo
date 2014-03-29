@@ -29,16 +29,17 @@
 							<h1 class="h2  img-text__title  img-text__title--product"><span class="img-text__bg"><?php the_title(); ?></span></h1>
 						</a>
 				<?php }*/ ?>
-				<div class="img-text__container">
+				<section class="img-text__container">
 					<?php include (TEMPLATEPATH . '/partials/_productgallery.php'); ?>
 
-					<h1 class="h1  img-text__title  img-text__title--product">
-						<span class="img-text__bg"><?php the_title(); ?></span>
+					<h1 class="h1  img-text__title--product">
+						<span class="img-text__bg--product"><?php the_title(); ?></span>
 					</h1>
-				</div>
+				</section>
 				
-				<?php the_content(); ?>
-					
+				<section>
+					<?php the_content(); ?>
+				</section>				
 			<?php endwhile; ?>
 		<?php else : ?>
 

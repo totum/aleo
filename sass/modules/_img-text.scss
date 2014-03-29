@@ -1,32 +1,54 @@
-// -------------------------------------
-//   Img-text
-//	 For text with background resting ontop of img.
-// -------------------------------------
+/* -------------------------------------
+	Img-text
+	For text on images.
+	container = usually image. can be anchor
+	title = header tag
+	bg = span
+------------------------------------- */
 
-.img-text__title--img-grid {
-	top: 5px;
-	right: 0;
-	opacity: 0.3;
-	@extend %ore-t__all--050;
-}
+/* Base
+---------------------------------------- */
 
 .img-text__container {
 	@extend %display-block;
-	position: relative;
+	@extend %ore-pos-rel;
 }
-
-.img-text__title {
-	position: absolute;
+%img-text__title {
+	@extend %ore-pos-abs;
 }
-.img-text__title--product {
-	top: 0;
-	left: 0;
-}
-
-
-
-.img-text__bg {
+%img-text__bg {
+	white-space: nowrap;
 	background-color: hsla(120, 10%, 0%, 0.5);
 	padding: 0.5em;
 	color: white;
 }
+
+/* Product
+---------------------------------------- */
+
+.img-text__title--product {
+	@extend %img-text__title;
+	top: 0;
+	left: 0;
+}
+
+.img-text__bg--product {
+	@extend %img-text__bg;
+}
+
+/* Sidebar
+---------------------------------------- */
+
+.img-text__title--sidebar {
+	@extend %img-text__title;
+	top: 5px;
+	right: 0;
+	@extend %ore-t__all--050;
+
+
+}
+
+.img-text__bg--sidebar {
+	@extend %img-text__bg;
+}
+
