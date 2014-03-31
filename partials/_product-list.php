@@ -1,8 +1,15 @@
 				<?php
 				// Set counter to output bigger src for featured.
 				$i = 1;
+
 				?>
+
 				<?php while (have_posts()) : the_post(); ?>
+					<?php
+					// Get current category name
+					$cats = get_the_category();
+					$cat_name = $cats[0]->name;
+					?>
 					<?php
 					// Pull ACF featured image #1.
 					$feat_image = get_field('featured_1');

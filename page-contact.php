@@ -2,39 +2,25 @@
 		
 	<main class="wrap-main  lc  clear" role="main">
 
-		<!-- Category name, h1 -->
-
-		<?php
-			// Get current category name
-			$cats = get_the_category();
-			$cat_name = $cats[0]->name;
-			?>
-			<!--<h2 class="category-title clear"><?php echo $cat_name; ?></h2>
-			-->
-
 		<?php if (have_posts()) : ?>
 
-			<article class="content  content--left  lc">
+			<article class="content  content--full  lc">
 
 			<?php while (have_posts()) : the_post(); ?>
-
-				<section class="img-text__container">
-					<?php include (TEMPLATEPATH . '/partials/_productgallery.php'); ?>
-
-					<h1 class="h1  img-text__title--product">
-						<span class="img-text__bg--product"><?php the_title(); ?></span>
-					</h1>
-				</section>
-				
-				<section  class="content__text">
+				<h2 class="content__title">
+						<?php the_title(); ?>
+				</h2>
+				<section  class="content--half--left">
 					<?php the_content(); ?>
+				</section>
+
+				<section class="content--half--right  img-text__container">
+					<?php include (TEMPLATEPATH . '/partials/_productgallery.php'); ?>
 				</section>
 
 			<?php endwhile; ?>
 
 			</article>
-
-			<?php include (TEMPLATEPATH . '/partials/_sidebar.php'); ?>
 
 		<?php else : ?>
 

@@ -96,6 +96,12 @@
 	@extend %ore-p__sides--medium--0;
 }
 
+.content--full {
+	@include breakpoint($l-break-medium) {
+		@include pre(2 of 12);
+		@include span(8 of 12 nest);
+	}
+}
 
 .content--left {
 	// @include span(12 of 12); not needed, 100% by default.
@@ -112,12 +118,18 @@
 	}
 }
 
-.content--full {
+.content--half--left {
 	@include breakpoint($l-break-medium) {
-		@include pre(2 of 12);
-		@include span(8 of 12 nest);
+		@include span(6 of 12);
 	}
 }
+.content--half--right {
+	@include breakpoint($l-break-medium) {
+		@include span(last 6 of 12);
+		margin-right: 0;
+	}
+}
+
 
 .sidebar {
 	@include span(12 of 12 nest);
