@@ -29,40 +29,33 @@
 						if ( $aside_post_id == $main_post_id ) : continue;						
 						else : ?>
 
-							<li class="sidebar__item">
-								<?php
-								// Checks for ACF featured image #1
-  								$feat_image = get_field('featured_1');
+							<?php
+							// Checks for ACF featured image #1
+  							$feat_image = get_field('featured_1');
+ 							if ( !empty($feat_image) ) {
+ 								// Store values
+ 								$url_feat = $feat_image['url'];
+								$title_feat = $feat_image['title'];
+								$alt_feat = $feat_image['alt'];
+								$caption_feat = $feat_image['caption'];
+							?>
 
-  								if ( !empty($feat_image) ) {
-  									// Store values
-  									$url_feat = $feat_image['url'];
-									$title_feat = $image['title'];
-									$alt_feat = $image['alt'];
-									$caption_feat = $image['caption'];
-								// Picturefill markup starts.
-								?>
-								<a href="<?php the_permalink() ?>" class="img-text__container">
+								<li class="sidebar__item">
 
-									<span class="sidebar__item__img" data-picture data-alt="<?php echo $alt_feat ?>" title="<?php echo $title_feat; ?>">
-
-										<span data-src="<?php echo $feat_image['sizes'][ 'thumb2' ]?>"></span>
-								        <span data-src="<?php echo $feat_image['sizes'][ 'small' ]?>" 	data-media="(min-device-pixel-ratio: 2.0)"></span>
-								        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-								        <noscript>
-								            <img src="<?php echo $feat_image['sizes'][ 'thumbnail' ]?>" alt="<?php echo $alt ?>">
-								        </noscript>
-								    </span>
-								
-									<!-- <img class="sidebar__item__img  img-grid__img  img-text__img" src="<?php echo $thumb_url; ?>" /> -->
-									<h3 class="h5  img-text__title--sidebar">
-										<span class="img-text__bg--sidebar"><?php the_title(); ?></span>
-									</h3>
-								</a>
-
-								<?php } ?>
-								
-							</li>
+									<a href="<?php the_permalink() ?>" class="img-text__container">
+										<img class="sidebar__item__img" title="<?php echo $title_feat; ?>" alt="<?php echo $alt_feat ?>"
+										     src="<?php echo $feat_image['sizes'][ 'thumb2' ]?>"
+										     srcset="
+										     	<?php echo $feat_image['sizes'][ 'thumb2' ]?> 1x,
+										     	<?php echo $feat_image['sizes'][ 'small' ]?> 2x"
+										/>
+										<h3 class="h5  img-text__title--sidebar">
+											<span class="img-text__bg--sidebar"><?php the_title(); ?></span>
+										</h3>
+									</a>
+									
+								</li>
+							<?php } ?>
 						<?php endif; ?>
 
 					<?php endwhile; ?>

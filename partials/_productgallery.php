@@ -42,7 +42,9 @@ while ($i <= $max_images) {
 			// Picturefill markup starts.
 			?>
 			<a href="<?php echo $image['sizes']['medium']?>" data-at2x="http://example.com/my_image@2x.png" data-caption="<p><?php echo $image['caption'] ?></p>" data-full="<?php echo $image['sizes'][ 'large' ]?>" />
-				<img src="<?php echo $image['sizes']['thumbnail']?>" alt="<?php echo $image['alt']?>">
+				<img alt="<?php echo $image['alt']?>" title="<?php echo $image['title']?>"
+					src="<?php echo $image['sizes']['thumbnail']?>" 
+				>
 			</a>
 
 <?php

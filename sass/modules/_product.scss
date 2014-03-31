@@ -1,9 +1,103 @@
+/* Product list
+---------------------------------------- */
+
+.product--list {
+	@extend %ore-list-0;
+}
+
+.product--list__item {
+	margin-bottom: 1.69492%; // ~10px, static gutter.
+	@include span(6 of 12);
+
+	@include breakpoint($l-break-small2) {
+		@include span(4 of 12);
+	}
+	@include breakpoint($l-break-large) {
+		@include span(3 of 12);
+	}
+}
+	// "Featured" item
+	.product--list__item:first-child {
+		@include span(12 of 12);
+		@include breakpoint($l-break-small2) {
+			@include span(8 of 12);
+		}
+		@include breakpoint($l-break-large) {
+			@include span(6 of 12);
+		}
+
+	}
+
+	// On small1 screens, gallery view except featured.
+	@include breakpoint(max-width ($l-break-small2 - 1)) {
+		.product--list__item:nth-child(odd):not(:first-child) {
+			@include span(last 6 of 12);
+			margin-right: 0;
+		}
+		.product--list__item:nth-child(even) {
+			@include span(6 of 12);
+		}
+	}
+
+	// On small2 and medium screens
+	@include breakpoint($l-break-small2 ($l-break-large - 1)) {
+		.product--list__item:nth-child(2) {
+			@include span(last 4 of 12);
+			margin-right: 0;
+		}
+		.product--list__item:nth-child(3) {
+			@include span(last 4 of 12);
+			margin-right: 0;	
+		}
+		.product--list__item:nth-child(n+4) {
+			@include gallery(4 of 12);
+		}
+	}
+
+	// Large screens
+	@include breakpoint($l-break-large ) {
+		.product--list__item:nth-child(3) {
+			@include span(last 3 of 12);
+			margin-right: 0;
+		}
+		.product--list__item:nth-child(5) {
+			@include span(last 3 of 12);
+			margin-right: 0;
+		}
+		.product--list__item:nth-child(n+6) {
+			@include gallery(3 of 12);
+		}
+	}
 
 
-/* .product__img {
-// make height stay same as div, fluid
-	//position: relative;
-	width: 100%;
-	//padding-bottom: 100%;
-	//@include box-sizing(content-box);
-} */
+
+
+/* Images
+---------------------------------------- */
+
+
+.product--list__img {
+	@extend %display-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* Opacity & Hovers
+---------------------------------------- */
+
+@include breakpoint($l-break-medium) {
+	.product--list__img,
+	.img-text__bg--product-list {
+		opacity: 0.5;
+		@include single-transition(all, .50s);
+	}
+	.product--list__item:first-child .product--list__img,
+	.product--list__item:first-child .img-text__bg--product-list {
+		opacity: 1;
+	}
+
+	.product--list__item:hover .product--list__img,
+	.product--list__item:hover .img-text__bg--product-list, {
+		opacity: 1;
+	}
+}

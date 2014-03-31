@@ -37,6 +37,7 @@
 		a {
 			color: #000;
 			text-decoration: none;
+			font-weight: normal;
 		}
 	}
 
@@ -51,6 +52,7 @@
 		}
 
 
-.nav-list {
-	padding: 0;
+.content__title {
+	@include leader(0);
+	@include trailing-border(2px, 0);
 }

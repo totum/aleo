@@ -2,8 +2,7 @@
 ---------------------------------------- */
 
 .sidebar__list {
-	list-style-type: none;
-	line-height: 0; // to avoid weird bottom margin
+	@extend %ore-list-0;
 }
 
 .sidebar__item {
@@ -47,7 +46,7 @@
 		}
 	}
 
-.sidebar__item__img img {
+.sidebar__item__img {
 	@extend %display-block;
 	max-height: 100%;
 	max-width: 100%;
@@ -70,8 +69,8 @@
 
 
 .sidebar__title__bg {
-	background-color: $color-caption;
-	color: $color-caption-bg;
+	background-color: #fff;
+	color: #000;
 	white-space: nowrap;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -85,20 +84,24 @@
 ---------------------------------------- */
 
 @include breakpoint($l-break-medium) {
+	.sidebar__title,
 	.sidebar__title__bg,
-	.sidebar__item__img img,
+	.sidebar__item__img,
 	.img-text__bg--sidebar {
 		opacity: 0.3;
 		@include single-transition(all, .50s);
 	}
 
+	.sidebar:hover .sidebar__title {
+		opacity: 1;
+	}
 	.sidebar:hover .sidebar__title__bg,
-	.sidebar:hover .sidebar__item__img img,
+	.sidebar:hover .sidebar__item__img,
 	.sidebar:hover .img-text__bg--sidebar {
 		opacity: 0.6;
 	}
 
-	.sidebar__item:hover .sidebar__item__img img,
+	.sidebar__item:hover .sidebar__item__img,
 	.sidebar__item:hover .img-text__bg--sidebar, {
 		opacity: 1;
 	}

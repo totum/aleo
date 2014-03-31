@@ -11,8 +11,7 @@
 			?>
 			<!--<h1 class="category-title clear"><?php echo $cat_name; ?></h1>
 			-->
-		<article class="content  content--left  product  lc">
-
+		<article class="content  content--left  lc">
 
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -36,7 +35,7 @@
 						<span class="img-text__bg--product"><?php the_title(); ?></span>
 					</h1>
 				</section>
-				
+
 				<section>
 					<?php the_content(); ?>
 				</section>				

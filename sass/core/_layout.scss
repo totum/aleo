@@ -102,13 +102,20 @@
 
 	@include breakpoint($l-break-medium) {
 		@include pre(2 of 12);
-		@include span(6 of 12);
+		@include span(6 of 12 nest);
 		margin-right: 0;
 	}
 	@include breakpoint($l-break-large) {
 		@include pre(2 of 12);
-		@include span(5 of 12);
+		@include span(5 of 12 nest);
 		margin-right: 0;
+	}
+}
+
+.content--full {
+	@include breakpoint($l-break-medium) {
+		@include pre(2 of 12);
+		@include span(8 of 12 nest);
 	}
 }
 
@@ -116,10 +123,9 @@
 	@include span(12 of 12 nest);
 	@include breakpoint($l-break-medium) {
 		@include span(2 of 12 at 8 wide nest);
-		padding-left: $base-line-height; // Whitespace same as 1 line
+		padding-left: $base-line-height * 1.5; // Whitespace same as 1 line
 	}
 	@include breakpoint($l-break-large) {
 		@include span(3 of 12 at 8 wide nest);
-		padding-left: $base-line-height;
 	}
 }

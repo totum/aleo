@@ -34,8 +34,8 @@ $s-boxsizing: border-box;
 $s-columns: 12;
 $s-container-width: auto;
 $s-grid-type: fluid;
-$s-gutter-ratio: 1/4;
-$s-gutter-position: inside;
+$s-gutter-ratio: 20px/80px; // 1/4
+$s-gutter-position: inside-static;
 
 // ----- Xlarge vars ----- //
 $s-column-width-xlarge: (85em / $s-columns) * 0.8; // 85em (desired width) / 12 (column number) / 0.8 (gutter ratio) = 

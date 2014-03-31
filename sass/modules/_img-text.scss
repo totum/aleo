@@ -23,7 +23,7 @@
 	color: white;
 }
 
-/* Product
+/* Product single
 ---------------------------------------- */
 
 .img-text__title--product {
@@ -36,6 +36,19 @@
 	@extend %img-text__bg;
 }
 
+/* Product list
+---------------------------------------- */
+
+.img-text__title--product-list {
+	@extend %img-text__title;
+	top: 0;
+	left: 0;
+}
+
+.img-text__bg--product-list {
+	@extend %img-text__bg;
+}
+
 /* Sidebar
 ---------------------------------------- */
 
@@ -43,9 +56,6 @@
 	@extend %img-text__title;
 	top: 5px;
 	right: 0;
-	@extend %ore-t__all--050;
-
-
 }
 
 .img-text__bg--sidebar {
