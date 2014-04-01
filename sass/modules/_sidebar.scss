@@ -58,11 +58,11 @@
 	// Bottom margins to control space to list.
 	// Based on golden ratios.
 	@include breakpoint($l-break-medium) {
-		margin-bottom: 80%;
+		// margin-bottom: 80%;
 	}
 	@include breakpoint($l-break-large) {
 		// Ratios featured/side on medium: 5 / 3
-		margin-bottom: 35%; //Based on width width
+		// margin-bottom: 35%; //Based on width width
 	}
 }
 

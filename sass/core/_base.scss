@@ -27,6 +27,14 @@ p {
     @extend %ore-m__topbottom--base !optional;
 }
 
+a {
+    color: $color-accent;
+    @extend %ore-t__all--050;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 // ----- Headings ----- //
 
 h1, .h1 {

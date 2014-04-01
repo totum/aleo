@@ -9,10 +9,18 @@ Template Name: Product List
 	<main class="wrap-main  lc  clear" role="main">
 
 		<?php
-		// First we show the frontpage blurb.
+		// First we show title and blurb if any.
 		?>
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
+
+					<?php
+		// Get the context to output in class for CTA. TEMP!
+			if ( is_single() ) {
+				$context = 'single';
+			} else {
+				$context = 'grid';
+			} ?>
 				<section class="product-page__blurb  content  content--full">
 					<h1 class="content__title">
 						<?php the_title(); ?>
@@ -64,6 +72,8 @@ Template Name: Product List
 		<?php endif; ?>
 
 		<?php wp_reset_postdata(); ?>
+
+		<?php include (TEMPLATEPATH . '/partials/_cta.php'); ?>
 
 	</main>
 

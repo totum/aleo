@@ -15,6 +15,15 @@
 
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
+
+		<?php
+		// Get the context to output in class for CTA. TEMP!
+			if ( is_single() ) {
+				$context = 'single';
+			} else {
+				$context = 'grid';
+			} ?>
+
 				<?php
 				// Checks for post selected image. Inserts if true.
 				/*if( has_post_thumbnail() ) {
@@ -51,7 +60,7 @@
 
 <?php include (TEMPLATEPATH . '/partials/_sidebar.php'); ?>
 
-	<div class="clear"></div>
+<?php include (TEMPLATEPATH . '/partials/_cta.php'); ?>
 
 	</main>
 

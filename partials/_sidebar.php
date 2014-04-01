@@ -20,9 +20,9 @@
 					// Count posts to avoid printing header if no more.
 					$post_count = $wp_query->post_count;
 					if ($post_count > 1) { ?>
-						<h2 class="h3  sidebar__title">
-							<span class="sidebar__title__bg">More <?php echo $cat_name ?></span>
-						</h2>
+						<!-- <h2 class="h3  sidebar__title"> -->
+							<!-- <span class="sidebar__title__bg">More... <?php //echo $cat_name ?></span> -->
+						<!-- </h2> -->
 					<?php } ?>
 
 					<ul class="sidebar__list">

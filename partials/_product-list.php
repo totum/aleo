@@ -5,6 +5,7 @@
 				?>
 
 				<?php while (have_posts()) : the_post(); ?>
+
 					<?php
 					// Get current category name
 					$cats = get_the_category();

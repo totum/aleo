@@ -87,6 +87,8 @@
 
 
 .wrap-main {
+	@extend %ore-pos-rel; // For CTA placement.
+
 	@include leader(1);
 	@include breakpoint($l-break-medium) {
 		@include leader(1.5);
@@ -130,7 +132,15 @@
 	}
 }
 
+	.cta--grid {
+		@include breakpoint($l-break-medium) {
+			@include pre(2 of 12);
+			@include span(8 of 12 nest);
+		}
+	}
 
+
+.cta--single,
 .sidebar {
 	@include span(12 of 12 nest);
 	@include breakpoint($l-break-medium) {
@@ -141,3 +151,5 @@
 		@include span(3 of 12 at 8 wide nest);
 	}
 }
+
+

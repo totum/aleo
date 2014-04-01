@@ -3,6 +3,8 @@
 
 .product--list {
 	@extend %ore-list-0;
+	@extend %ore-clearfix--small;
+	@extend %ore-clearfix--medium;
 }
 
 .product--list__item {
@@ -25,7 +27,6 @@
 		@include breakpoint($l-break-large) {
 			@include span(6 of 12);
 		}
-
 	}
 
 	// On small1 screens.

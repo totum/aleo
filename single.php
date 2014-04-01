@@ -17,7 +17,13 @@
 			<article class="content  content--left  lc">
 
 			<?php while (have_posts()) : the_post(); ?>
-
+		<?php
+		// Get the context to output in class for CTA. TEMP!
+			if ( is_single() ) {
+				$context = 'single';
+			} else {
+				$context = 'grid';
+			} ?>
 				<section class="img-text__container">
 					<?php include (TEMPLATEPATH . '/partials/_productgallery.php'); ?>
 
@@ -34,7 +40,11 @@
 
 			</article>
 
+			<?php include (TEMPLATEPATH . '/partials/_cta.php'); ?>
+
 			<?php include (TEMPLATEPATH . '/partials/_sidebar.php'); ?>
+
+
 
 		<?php else : ?>
 

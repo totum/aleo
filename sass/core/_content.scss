@@ -56,3 +56,38 @@
 	@include leader(0);
 	@include trailing-border(2px, 0);
 }
+
+
+.cta {
+	@include leader(1);
+	@include trailer(1);
+}
+
+.cta--single {
+	@include leader(1.5);
+	@include trailer(1.5);
+}
+
+.cta__p {
+	@include rhythm(0, 0.5, 0.5, 0);
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	background-color: #fff;
+}
+
+.cta__button {
+	display: block;
+	margin: 0;
+	// @include rhythm(0, 0.5, 0.5, 0);
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	// background-color: #fff;
+	// @include adjust-font-size-to(0.9rem);
+	@include rhythm-borders(4px, 0.5);
+	background-color: #fff;
+	border-color: #fff;
+	@extend %ore-t__all--050;
+	&:hover {
+		border-color: $color-accent;
+	}
+}

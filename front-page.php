@@ -7,8 +7,16 @@
 		?>
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
+
+					<?php
+		// Get the context to output in class for CTA. TEMP!
+			if ( is_single() ) {
+				$context = 'single';
+			} else {
+				$context = 'grid';
+			} ?>
 				<section class="front-page__blurb  content  content--full">
-					<h2 class="content__title">
+					<h2 class="h1  content__title">
 						<?php the_title(); ?>
 					</h2>
 					<?php the_content(); ?>
@@ -31,6 +39,9 @@
 			'post_type' => 'post',
 			'posts_per_page' => -1
 		);
+
+		// And set frontpage to true
+		$frontpage = true;
 		$wp_query = new WP_Query( $args ); ?>
 		
 		<?php if (have_posts()) : ?>
@@ -46,9 +57,11 @@
 				<p>Sorry, but you are looking for something that isn't here.</p>
 			</article>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
-			<?php wp_reset_postdata(); ?>
+		<?php wp_reset_postdata(); ?>
+
+		<?php include (TEMPLATEPATH . '/partials/_cta.php'); ?>
 
 	</main>
 

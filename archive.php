@@ -12,6 +12,14 @@
 		
 		<?php if (have_posts()) : ?>
 
+					<?php
+		// Get the context to output in class for CTA. TEMP!
+			if ( is_single() ) {
+				$context = 'single';
+			} else {
+				$context = 'grid';
+			} ?>
+
 			<nav class="content content--full  lc" role="navigation">
 				<h1 class="content__title"><?php echo $cat_name; ?></h1>
 				<ul class="product--list">
@@ -20,6 +28,8 @@
 
 				</ul>
 			</nav>
+
+			<?php include (TEMPLATEPATH . '/partials/_cta.php'); ?>
 
 		<?php else : ?>
 
