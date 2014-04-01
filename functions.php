@@ -27,14 +27,14 @@ function load_scripts() {
 		// Deregister jquery
 		wp_deregister_script('jquery');
 		// Register jQuery + much more from JSDelivr. +Cache, +Single http request, +speed, -own bandwidth
-		wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdn.jsdelivr.net/g/jquery@2.1,html5shiv@3.7,respond@1.4,retinajs@1.1", false, null, true);
+		wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdn.jsdelivr.net/g/jquery@2.1,html5shiv@3.7,respond@1.4", false, null, true);
 		// Site specific JS
 		// wp_register_script('srcset', get_template_directory_uri() . '/js/srcset.min.js', false, null, true);
 		// wp_register_script('fotorama', get_template_directory_uri() . '/lib/fotorama/fotorama.js', false, null, true);
 		// wp_register_script('galleria', get_template_directory_uri() . '/js/galleria/galleria-1.3.5.min.js', array( 'jquery' ), null, true);
 		//wp_register_script('aleo', get_template_directory_uri() . '/js/aleo.js', array( 'jquery', 'picturefill' ), '1', true);
 
-		wp_register_script('aleo', get_template_directory_uri() . '/js/aleo.js', array( 'jquery' ), '1', true);
+		wp_register_script('aleo', get_template_directory_uri() . '/js/aleo.js', array( 'jquery' ), null, true);
 
 		// Load all
 
