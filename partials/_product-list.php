@@ -25,18 +25,18 @@
 								<?php
 								if ( $i == 1 ) { ?>
 									<img class="product--list__img" title="<?php echo $title_feat; ?>" alt="<?php echo $alt_feat ?>"
-										src="<?php echo $feat_image['sizes'][ 'small' ]?>"
+										src="<?php echo $feat_image['sizes'][ 'small_t' ]?>"
 										srcset="
-											<?php echo $feat_image['sizes'][ 'small' ]?> 1x,
-											<?php echo $feat_image['sizes'][ 'medium' ]?> 2x"
+											<?php echo $feat_image['sizes'][ 'small_t' ]?> 1x,
+											<?php echo $feat_image['sizes'][ 'medium_t' ]?> 2x"
 									/>
 
 								<?php } else { ?>
 									<img class="product--list__img" title="<?php echo $title_feat; ?>" alt="<?php echo $alt_feat ?>"
-										src="<?php echo $feat_image['sizes'][ 'thumb2' ]?>"
+										src="<?php echo $feat_image['sizes'][ 'thumb2_t' ]?>"
 										srcset="
-											<?php echo $feat_image['sizes'][ 'thumb2' ]?> 1x,
-											<?php echo $feat_image['sizes'][ 'small' ]?> 2x"
+											<?php echo $feat_image['sizes'][ 'thumb2_t' ]?> 1x,
+											<?php echo $feat_image['sizes'][ 'small_t' ]?> 2x"
 									/>
 								<?php } ?>
 								<h2 class="h3  img-text__title--product-list">

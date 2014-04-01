@@ -4,8 +4,11 @@
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 80, 80 ); // Thumbnail. Used in galleries
 add_image_size( 'thumb2', 240, 240 ); // Thumb2 for smaller images in grid
+add_image_size( 'thumb2_t', 240, 240, true ); // Thumb2 for smaller images in grid
 add_image_size( 'small', 480, 480 ); // 
+add_image_size( 'small_t', 480, 480, true ); // Thumb2 for smaller images in grid
 add_image_size( 'medium', 960, 960 ); // Medium, for small HDPI and regular
+add_image_size( 'medium_t', 960, 960, true ); // Medium, for small HDPI and regular
 add_image_size( 'large', 1560, 1560 ); // Large for Medium @2
 add_image_size( 'xlarge', 2000, 2000 ); // Xlarge for src link
 add_image_size( 'full', 9999, 9999 ); // Full-size image for whatever!

@@ -49,10 +49,10 @@
 
 									<a href="<?php the_permalink() ?>" class="img-text__container">
 										<img class="sidebar__item__img" title="<?php echo $title_feat; ?>" alt="<?php echo $alt_feat ?>"
-										     src="<?php echo $feat_image['sizes'][ 'thumb2' ]?>"
+										     src="<?php echo $feat_image['sizes'][ 'thumb2_t' ]?>"
 										     srcset="
-										     	<?php echo $feat_image['sizes'][ 'thumb2' ]?> 1x,
-										     	<?php echo $feat_image['sizes'][ 'small' ]?> 2x"
+										     	<?php echo $feat_image['sizes'][ 'thumb2_t' ]?> 1x,
+										     	<?php echo $feat_image['sizes'][ 'small_t' ]?> 2x"
 										/>
 										<h3 class="h5  img-text__title--sidebar">
 											<span class="img-text__bg--sidebar"><?php the_title(); ?></span>

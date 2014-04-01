@@ -3,6 +3,8 @@
 ?>
 
 <div class="fotorama"
+	data-width="100%"
+	data-ratio="1/1"
 	data-allowfullscreen="true"
 	data-nav="thumbs"
 	data-arrows="true"

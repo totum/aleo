@@ -28,7 +28,8 @@
 
 	}
 
-	// On small1 screens, gallery view except featured.
+	// On small1 screens.
+	// Gallery view breaks because start # li is unexpected.
 	@include breakpoint(max-width ($l-break-small2 - 1)) {
 		.product--list__item:nth-child(odd):not(:first-child) {
 			@include span(last 6 of 12);
@@ -55,6 +56,7 @@
 	}
 
 	// Large screens
+	// Gallery view breaks because start # li is unexpected.
 	@include breakpoint($l-break-large ) {
 		.product--list__item:nth-child(3) {
 			@include span(last 3 of 12);
@@ -64,8 +66,9 @@
 			@include span(last 3 of 12);
 			margin-right: 0;
 		}
-		.product--list__item:nth-child(n+6) {
-			@include gallery(3 of 12);
+		.product--list__item:nth-child(4n+9) {
+			@include span(last 3 of 12);
+			margin-right: 0;
 		}
 	}
 

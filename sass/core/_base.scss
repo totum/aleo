@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	background-color: hsl(0,10%,90%);
+	background-color: $color-grey;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     -webkit-animation: bugfix infinite 1s; // For toggle nav
 }
